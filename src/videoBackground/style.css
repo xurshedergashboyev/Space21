@@ -1,0 +1,28 @@
+.scroll-container {
+    height: 100vh;
+    background: black;
+}
+.speak {
+    margin: 150vh 0;
+    margin-top: -50vh;
+}
+
+.scroll-sequence__content {
+    padding: 4em;
+}
+.scroll-sequence {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -5;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
