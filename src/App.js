@@ -21,12 +21,9 @@ import AboutUsPage from "./pages/AboutUsPage";
 // import HoverText from "./hoverText";
 
 
-import spaceImage from './images/01.png'
 
 import LocomotiveText from "./locomotiveText";
-import HorizontalScroll from "./horizontalScroll";
-import TextReveal from "./textReveal";
-import PinnedSideImages from "./pinnedSideImages";
+
 import OurServicesPage from "./pages/OurServicesPage";
 
 const App = () => {

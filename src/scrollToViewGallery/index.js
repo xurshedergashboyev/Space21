@@ -27,7 +27,7 @@ const ScrollToViewGallery = () => {
         const size = Math.max(window.innerWidth, window.innerHeight);
         gsap.set('.gridBlock', {backgroundImage: i => `url(https://picsum.photos/${size}/${size}?random=${i})`});
 
-        const bigImg = new Image;
+        const bigImg = new Image();
         bigImg.addEventListener("load", function () {
             gsap.to(".centerPiece .gridBlock", {autoAlpha: 1, duration: 0.5});
         });
@@ -52,7 +52,7 @@ const ScrollToViewGallery = () => {
                         <div className="gridBlock centerBlock"/>
                     </div>
                     <div className="gridLayer">
-                        <div className="gridBlock"><a href="https://greensock.com" target="_blank"/></div>
+                        <div className="gridBlock"/>
                     </div>
                     <div className="gridLayer">
                         <div className="gridBlock"/>

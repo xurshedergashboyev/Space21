@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import {gsap} from "gsap";
-import {ScrollTrigger} from 'gsap/ScrollTrigger';
-import {ComparisonImage, AfterImage, AfterImg, BeforeImage, ComparisonImg, ComparisonSection} from "./style";
+import { AfterImage, AfterImg, BeforeImage, ComparisonImg, ComparisonSection} from "./style";
 
 const Example = () => {
     useEffect(() => {

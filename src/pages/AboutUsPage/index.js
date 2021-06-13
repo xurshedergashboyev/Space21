@@ -1,5 +1,4 @@
 import React from 'react'
-import spaceImage from "../../images/01.png";
 import ScrollToViewGallery from "../../scrollToViewGallery";
 import Example from "../../example";
 import ParallaxOutlineText from "../../parallaxOutlineText";

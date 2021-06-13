@@ -1,6 +1,6 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect} from 'react';
 import {Mask, NavbarWrapper} from "./style";
-import {Link} from 'react-router-dom'
+
 
 const  HoverText = ({isOpen, callback}) => {
     useEffect(() => {

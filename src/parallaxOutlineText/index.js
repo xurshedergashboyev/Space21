@@ -8,7 +8,6 @@ const ParallaxOutlineText = () => {
 
     useEffect(() => {
         let viewHeight = window.innerHeight;
-        let viewWidth = window.innerWidth;
 
         let textContainers = document.querySelectorAll('.text-container');
 

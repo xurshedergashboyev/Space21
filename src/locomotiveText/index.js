@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import './style.css'
 import navbarIcon from '../images/menu.png'
 import {Image, Wrapper} from './style'

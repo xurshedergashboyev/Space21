@@ -1,5 +1,4 @@
 import React from 'react'
-import LocomotiveText from "../../locomotiveText";
 import ScrollToViewGallery from "../../scrollToViewGallery";
 import Example from "../../example";
 import ParallaxOutlineText from "../../parallaxOutlineText";

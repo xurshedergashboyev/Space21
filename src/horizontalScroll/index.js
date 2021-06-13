@@ -2,17 +2,14 @@ import React, {useEffect, useRef} from 'react';
 import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import './style.css';
-import { Container, Panel, Green, Orange, Purple, Red, Grey, PanelText, PanelItem, PanelItemText } from "./style";
-import LocomotiveScroll from 'locomotive-scroll'
+import { Container, Panel, Red, PanelItem, PanelItemText } from "./style";
 
 const HorizontalScroll = () => {
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null)
 
     useEffect(() => {
-        const element = ref.current;
         let sections = gsap.utils.toArray(".panel");
-
         gsap.to(sections, {
             xPercent: -100 * (sections.length - 1),
             ease: "none",
