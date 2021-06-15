@@ -30,7 +30,7 @@ const  HoverText = ({isOpen, callback}) => {
             </Mask>
             <Mask className="mask" onClick={callback}>
                 <p>
-                    Performance & Tracking_
+                    Exit_
                 </p>
             </Mask>
         </NavbarWrapper>

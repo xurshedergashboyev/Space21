@@ -41,7 +41,37 @@ const ParallaxOutlineText = () => {
                 ease: "none"
             });
         });
-
+        ScrollTrigger.create({
+            trigger: ".section-section",
+            start: "top center",
+            scrub: true,
+            onEnter: () => gsap.to(".section-section", {
+                duration: 1,
+                backgroundColor: "#222",
+                webkitTextStroke: "#f6f6f6",
+            }),
+            onLeave: () => gsap.to(".section-section", {
+                duration: 1,
+                backgroundColor: "#f6f6f6",
+                autoAlpha: 1,
+                color: "#222"
+            }),
+        })
+        // ScrollTrigger.create({
+        //     trigger: ".parallax-text",
+        //     start: "top center",
+        //     scrub: true,
+        //     onEnter: () => gsap.to(".parallax-text", {
+        //         duration: 1,
+        //         webkitTextStroke: "#222"
+        //     }),
+        //     onLeave: () => gsap.to(".parallax-text", {
+        //         duration: 1,
+        //         autoAlpha: 1,
+        //         webkitTextStroke: "#222",
+        //     }),
+        //     markers: true
+        // })
     })
     return (
         <>

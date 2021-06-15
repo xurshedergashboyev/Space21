@@ -8,7 +8,27 @@
     width: 100vw;
     height: 400vh;
     position: relative;
+    margin-bottom: 500px;
 }
+
+@media screen and (max-width: 1250px) {
+    .grid-container {
+        margin-bottom: 200px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .grid-container {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .grid-container {
+        margin-bottom: 100px;
+    }
+}
+
 .grid {
     top: 0;
     left: 0;

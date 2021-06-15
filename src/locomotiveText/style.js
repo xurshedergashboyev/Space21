@@ -2,21 +2,22 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   position:fixed;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  background-color: #000000;
+  background-color: #ffbf2b;
   color: #fff;
-  top: 60px;
+  top: 50px;
   right: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
   z-index: 10;
 `;
 
 
-export const Image = styled.a`
+export const Image = styled.p`
   cursor: pointer;
-  font-size: 16px;
+  font-size: 10px;
   color: #000;
 `;

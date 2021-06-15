@@ -10,7 +10,7 @@ export const NavbarWrapper = styled.div `
    transform: ${({ isOpen }) => (isOpen ? "translateY(0)" : "translateY(-100%)")};
   width: 100vw;
   height: 100vh;
-  background-color: #afafaf;
+  background-color: #222222;
   //opacity: .5;
   transition: .5s;
   z-index: 99;
@@ -28,11 +28,15 @@ export const Mask = styled(Link) `
   line-height: 1.2;
   letter-spacing: -0.03em;
   font-family: Helvetica, Arial, sans-serif;
-  background: radial-gradient(circle 100px at var(--x,0) var(--y,0), #000 99%, #222222 100%) fixed;
+  background: radial-gradient(circle 100px at var(--x,0) var(--y,0), #747474 99%, #f6f6f6 100%) fixed;
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
   transition: all 0.5s ease-in-out;
+  @media screen and (max-width: 550px) {
+            background: radial-gradient(circle 50px at var(--x,0) var(--y,0), #747474 99%, #f6f6f6 100%) fixed;
+            -webkit-background-clip: text;
+          }
     &:after {
       content: "";
       display: block;
@@ -40,11 +44,26 @@ export const Mask = styled(Link) `
       height: 6px;
     }
     &:hover {
-      background: radial-gradient(circle 100px at var(--x,0) var(--y,0), #ffffff 99%, #000000 100%) fixed;
-  -webkit-background-clip: text;
+      background: radial-gradient(circle 100px at var(--x,0) var(--y,0), #000000 99%, #f6f6f6 100%) fixed;
+      -webkit-background-clip: text;
+      @media screen and (max-width: 550px) {
+            background: radial-gradient(circle 50px at var(--x,0) var(--y,0), #000000 99%, #f6f6f6 100%) fixed;
+            -webkit-background-clip: text;
+          }
     &:after {
-          background: radial-gradient(circle 100px at var(--x,0) var(--y,0), #ffffff 99%, #000000 100%) fixed;
+      background: radial-gradient(circle 100px at var(--x,0) var(--y,0), #000000 99%, #f6f6f6 100%) fixed;
+      @media screen and (max-width: 550px) {
+            background: radial-gradient(circle 50px at var(--x,0) var(--y,0), #000000 99%, #f6f6f6 100%) fixed;
+          }
       }
     }
+    @media screen and (max-width: 1200px) {
+      font-size: 80px;
+    }
+    @media screen and (max-width: 550px) {
+      font-size: 50px;
+    }
   }
+  
+ 
 `;

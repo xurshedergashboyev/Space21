@@ -27,31 +27,31 @@ import LocomotiveText from "./locomotiveText";
 import OurServicesPage from "./pages/OurServicesPage";
 
 const App = () => {
-    gsap.registerPlugin(ScrollTrigger);
-    useEffect(() => {
-        TweenMax.to(".second", 1.5, {
-            delay: 2,
-            top: "-100%",
-            ease: Expo.easeInOut
-        });
-        // gsap.to(".second", {
-        //     scrollTrigger: {
-        //         trigger: ".second",
-        //         scrub: 1,
-        //         start: "bottom",
-        //         markers: true,
-        //         pin: true,
-        //     },
-        //     duration: 1,
-        //     top: "-150%",
-        //     ease: "easeInOut"
-        // })
-        gsap.to('progress', {
-            value: 100,
-            ease: 'none',
-            scrollTrigger: {scrub: 0.3}
-        });
-    })
+    // gsap.registerPlugin(ScrollTrigger);
+    // useEffect(() => {
+    //     TweenMax.to(".second", 1.5, {
+    //         delay: 2,
+    //         top: "-100%",
+    //         ease: Expo.easeInOut
+    //     });
+    //     // gsap.to(".second", {
+    //     //     scrollTrigger: {
+    //     //         trigger: ".second",
+    //     //         scrub: 1,
+    //     //         start: "bottom",
+    //     //         markers: true,
+    //     //         pin: true,
+    //     //     },
+    //     //     duration: 1,
+    //     //     top: "-150%",
+    //     //     ease: "easeInOut"
+    //     // })
+    //     gsap.to('progress', {
+    //         value: 100,
+    //         ease: 'none',
+    //         scrollTrigger: {scrub: 0.3}
+    //     });
+    // })
     return (
         <>
             <LocomotiveText/>

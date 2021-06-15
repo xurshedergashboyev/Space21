@@ -4,19 +4,19 @@ export const Wrapper = styled.div `
   [data-page-container]{
     background-color: #fff;
     position: relative;
-    width: 90vw;
+    width: 100vw;
     margin: 0 auto;
     min-height: 100vh;
     overflow-x: hidden;
     @media screen and (max-width: 760px){
-         width: 92vw;
+         width: 100vw;
   }
 }
 `;
 
 
 export const Intro = styled.section `
-  width: 100%;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -29,21 +29,28 @@ export const IntroLetters = styled.div `
   max-width: 75vh;
   @media screen and (max-width: 760px){
        padding: 0 6vw;
+       width: 400px;
+       height: 400px;
+  }
+  @media screen and (max-width: 560px){
+       padding: 0 6vw;
+       width: 300px;
+       height: 300px;
   }
 `;
 
 
 export const BorderTop = styled.div `
-  width: 100%;
+    width: 100%;
     height: 60px;
     background-color: #000;
     transform: scaleX(0);
-    transform-origin: 0% 50%;
+    transform-origin: 0 50%;
     margin-bottom: auto;
 `;
 
 export const BorderBottom = styled.div `
-  width: 100%;
+    width: 100%;
     height: 60px;
     background-color: #000;
     transform: scaleX(0);
@@ -60,6 +67,10 @@ export const LettersGrid = styled.div `
 
 export const GridItem = styled.div `
     padding: 10vh 0;
+    @media screen and (max-width: 760px){
+       width: 100px;
+       height: 100px;
+  }
 `;
 
 export const LetterO = styled(GridItem) `

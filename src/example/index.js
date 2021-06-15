@@ -13,7 +13,7 @@ const Example = () => {
                     end: () => "+=" + section.offsetWidth,
                     scrub: true,
                     pin: true,
-                    anticipatePin: 1
+                    anticipatePin: 1,
                 },
                 defaults: {ease: "none"}
             });

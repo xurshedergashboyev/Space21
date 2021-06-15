@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import './style.css';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from "gsap/ScrollTrigger";
+import {GridLayer, GridContainer, GridBlock, Grid} from "./style";
 
 const ScrollToViewGallery = () => {
     gsap.registerPlugin(ScrollTrigger)
@@ -37,37 +38,37 @@ const ScrollToViewGallery = () => {
     return (
         <>
             {/*<h1 className="header-section">Scroll down to see a photo gallery being revealed</h1>*/}
-            <div className="grid-container">
-                <div className="grid">
-                    <div className="gridLayer">
-                        <div className="gridBlock"/>
-                    </div>
-                    <div className="gridLayer">
-                        <div className="gridBlock"/>
-                    </div>
-                    <div className="gridLayer">
-                        <div className="gridBlock"/>
-                    </div>
-                    <div className="gridLayer centerPiece">
-                        <div className="gridBlock centerBlock"/>
-                    </div>
-                    <div className="gridLayer">
-                        <div className="gridBlock"/>
-                    </div>
-                    <div className="gridLayer">
-                        <div className="gridBlock"/>
-                    </div>
-                    <div className="gridLayer">
-                        <div className="gridBlock"/>
-                    </div>
-                    <div className="gridLayer">
-                        <div className="gridBlock"/>
-                    </div>
-                    <div className="gridLayer">
-                        <div className="gridBlock"/>
-                    </div>
-                </div>
-            </div>
+            <GridContainer className="grid-container">
+                <Grid className="grid">
+                    <GridLayer className="gridLayer">
+                        <GridBlock className="gridBlock"/>
+                    </GridLayer>
+                    <GridLayer className="gridLayer">
+                        <GridBlock className="gridBlock"/>
+                    </GridLayer>
+                    <GridLayer className="gridLayer">
+                        <GridBlock className="gridBlock"/>
+                    </GridLayer>
+                    <GridLayer className="gridLayer centerPiece">
+                        <GridBlock className="gridBlock centerBlock"/>
+                    </GridLayer>
+                    <GridLayer className="gridLayer">
+                        <GridBlock className="gridBlock"/>
+                    </GridLayer>
+                    <GridLayer className="gridLayer">
+                        <GridBlock className="gridBlock"/>
+                    </GridLayer>
+                    <GridLayer className="gridLayer">
+                        <GridBlock className="gridBlock"/>
+                    </GridLayer>
+                    <GridLayer className="gridLayer">
+                        <GridBlock className="gridBlock"/>
+                    </GridLayer>
+                    <GridLayer className="gridLayer">
+                        <GridBlock className="gridBlock"/>
+                    </GridLayer>
+                </Grid>
+            </GridContainer>
         </>
     )
 }
