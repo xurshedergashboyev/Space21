@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import {gsap} from 'gsap'
 import {ScrollTrigger} from "gsap/ScrollTrigger";
-import {Wrapper, Container, ContainerText, ContainerTextWrapper, Image, ContainerImage} from "./style";
+import {Wrapper, Container, Image, ContainerImage} from "./style";
 
 const ProgrammingSection = () => {
     gsap.registerPlugin(ScrollTrigger)

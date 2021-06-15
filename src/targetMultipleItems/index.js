@@ -41,9 +41,8 @@ const TargetMultipleItems = () => {
         }
 
 // find all images, put them in node-list
-        const s7images = document.querySelectorAll('.s7image');
+//         const s7images = document.querySelectorAll('.s7image');
 
-        const s7imagesArray = Array.from(s7images);
 // The american flag
         gsap.to('#s2d0', {
             autoAlpha:1,
@@ -128,14 +127,13 @@ const TargetMultipleItems = () => {
     })
     return (
         <>
-            s
             <div id="box1">
                 this is just a spacer ,scroll down
 
             </div>
 
             <div id="box2">
-                <a id="concept" className="show"/>
+                <div id="concept" className="show"/>
                 <div id="s2d0"/>
                 <div id="s2d1" className="s2">LINE 1</div>
                 <div id="s2d2" className="s2">LINE 2</div>
