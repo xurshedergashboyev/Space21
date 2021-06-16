@@ -1,8 +1,5 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Switch, Route} from 'react-router-dom';
-import {Expo, gsap, TweenMax} from 'gsap'
-// import LocomotiveScroll from 'locomotive-scroll';
-import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import LandingPage from "./pages/LandingPage";
 import AboutUsPage from "./pages/AboutUsPage";
 
@@ -27,31 +24,22 @@ import LocomotiveText from "./locomotiveText";
 import OurServicesPage from "./pages/OurServicesPage";
 
 const App = () => {
-    gsap.registerPlugin(ScrollTrigger);
-    useEffect(() => {
-        TweenMax.to(".second", 1.5, {
-            delay: 2,
-            top: "-100%",
-            ease: Expo.easeInOut
-        });
-        // gsap.to(".second", {
-        //     scrollTrigger: {
-        //         trigger: ".second",
-        //         scrub: 1,
-        //         start: "bottom",
-        //         markers: true,
-        //         pin: true,
-        //     },
-        //     duration: 1,
-        //     top: "-150%",
-        //     ease: "easeInOut"
-        // })
-        gsap.to('progress', {
-            value: 100,
-            ease: 'none',
-            scrollTrigger: {scrub: 0.3}
-        });
-    })
+//     useEffect(() => {
+//         const bodyScrollBar = Scrollbar.init(document.body, { damping: 0.1, delegateTo: document });
+//
+//         ScrollTrigger.scrollerProxy(document.body, {
+//             scrollTop(value) {
+//                 if (arguments.length) {
+//                     bodyScrollBar.scrollTop = value; // setter
+//                 }
+//                 return bodyScrollBar.scrollTop;    // getter
+//             },
+//         });
+//
+// // when the smooth scroller updates, tell ScrollTrigger to update() too:
+//         bodyScrollBar.addListener(ScrollTrigger.update);
+//     })
+
     return (
         <>
             <LocomotiveText/>

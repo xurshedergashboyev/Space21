@@ -28,7 +28,7 @@ const  HoverText = ({isOpen, callback}) => {
                     Our Services
                 </p>
             </Mask>
-            <Mask className="mask" onClick={callback}>
+            <Mask className="mask" onClick={callback} >
                 <p>
                     Exit_
                 </p>

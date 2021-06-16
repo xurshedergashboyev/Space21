@@ -7,6 +7,7 @@ const ParallaxOutlineText = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     useEffect(() => {
+        const tl = gsap.timeline()
         let viewHeight = window.innerHeight;
 
         let textContainers = document.querySelectorAll('.text-container');
@@ -41,15 +42,13 @@ const ParallaxOutlineText = () => {
                 ease: "none"
             });
         });
+
+
         ScrollTrigger.create({
             trigger: ".section-section",
             start: "top center",
             scrub: true,
-            onEnter: () => gsap.to(".section-section", {
-                duration: 1,
-                backgroundColor: "#222",
-                webkitTextStroke: "#f6f6f6",
-            }),
+            animation: tl,
             onLeave: () => gsap.to(".section-section", {
                 duration: 1,
                 backgroundColor: "#f6f6f6",
