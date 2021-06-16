@@ -41,7 +41,7 @@ const App = () => {
 //     })
 
     return (
-        <>
+        <div className="app-container">
             <LocomotiveText/>
             <Switch>
                 <Route exact path="/">
@@ -58,7 +58,7 @@ const App = () => {
             {/*<TextReveal />*/}
             {/*<PinnedSideImages />*/}
             {/*<progress max="100" value="0"/>*/}
-        </>
+        </div>
     );
 }
 

@@ -74,3 +74,8 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
   background: #000;
 }
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+}
