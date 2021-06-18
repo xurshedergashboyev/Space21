@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   background-color: #222222;
   padding: 100px;
   margin-bottom: 800px;
+  overflow: hidden;
 `;
 
 export const Container = styled.div`
@@ -38,7 +39,7 @@ export const ContainerText = styled.p`
 export const ContainerImage = styled.div`
   width: 200vw;
   height: 2000px;
-  transform: rotateY(90deg) translate3d(0px, 0px, 0px);
+  transform: rotateY(90deg);
   transform-style: preserve-3d;
   perspective: 1000px;
   position: absolute;

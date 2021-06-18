@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   cursor: url('https://b14.dk/sites/all/themes/b14theme/images/b14_cursor_black.png') 25 30, auto;
-
 }
 
 
@@ -18,7 +17,6 @@
 
 
 body {
-
   margin: 0;
   font-family: 'Azonix', sans-serif;
   -webkit-font-smoothing: antialiased;

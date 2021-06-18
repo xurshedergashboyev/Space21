@@ -6,6 +6,7 @@ export const ComparisonSection = styled.section`
   margin-bottom: 100px;
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 `;
 
 export const ComparisonImage = styled.div`

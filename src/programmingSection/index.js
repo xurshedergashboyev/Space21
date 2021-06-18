@@ -8,17 +8,18 @@ const ProgrammingSection = () => {
     useEffect(() => {
             const tl = gsap.timeline();
 
-                tl.to(".container-text-wrapper", {
-                    x: -1000
-                })
-                    .to(".container-text-wrapper", {
-                        y: -500
-                    })
-                    .to(".container-image", {
-                        transform: "rotateY(0)",
-                        opacity: 1,
-                        duration: 3
-                    })
+                tl.to(".container-image", {
+                transform: "rotateY(0)",
+                opacity: 1,
+                duration: 3
+            })
+                // to(".container-text-wrapper", {
+                //     x: -1000
+                // })
+                //     .to(".container-text-wrapper", {
+                //         y: -500
+                //     })
+
                     .to(".container-image", {
                         transform: "scale(1.3 )",
                     })

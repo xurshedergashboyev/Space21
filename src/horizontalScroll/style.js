@@ -16,7 +16,6 @@ export const Panel = styled.div `
 `;
 
 export const PanelItem = styled.div `
-
   display: flex;
   flex-direction: column;
 `;
@@ -28,6 +27,7 @@ export const PanelItemText = styled.h1 `
 
 export const Red = styled(Panel) `
   background-color: #f6f6f6;
+  position:relative;
 `;
 
 export const Orange = styled(Panel) `
@@ -53,4 +53,52 @@ export const PanelText = styled.div `
   font-size: 100px;
   color: #afafaf;
   margin-top: 300px;
+`;
+
+export const FirstPanelAbsolute = styled.h1 `
+font-family: "Couture Bold", sans-serif;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-size: 250px;
+  color: #a7a7a7;
+`;
+
+export const SecondPanelAbsolute = styled.h1 `
+font-family: "Couture Bold", sans-serif;
+  position: absolute;
+  top: 65%;
+  right: 35%;
+  font-size: 280px;
+  color: #4e4e4e;
+`;
+
+export const ThirdPanelAbsolute = styled.h1 `
+  font-family: "Couture Bold", sans-serif;
+  position: absolute;
+  top: 0;
+  right: 20%;
+  font-size: 280px;
+  color: #808080;
+  z-index: -1;
+`;
+
+export const FourthPanelAbsolute = styled.h1 `
+  font-family: "Couture Bold", sans-serif;
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  font-size: 200px;
+  color: #363636;
+  z-index: -1;
+`;
+
+export const FifthPanelAbsolute = styled.h1 `
+  font-family: "Couture Bold", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  font-size: 200px;
+  color: #363636;
+  z-index: -1;
 `;

@@ -3,6 +3,10 @@ import './style.css';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 
+import image3 from '../images/pexels-eva-elijas-6956316.jpg';
+import image2 from '../images/pexels-nataliya-vaitkevich-6120166.jpg';
+import image1 from '../images/walling-SQIpFNb0Nk4-unsplash.jpg';
+
 gsap.registerPlugin(ScrollTrigger);
 
 const PinnedSideImages = () => {
@@ -110,8 +114,8 @@ const PinnedSideImages = () => {
 
             <div className="content-container">
                 <div className="left-content">
-                    <img id="img1" className="imageToShow" src="https://wallpaperaccess.com/full/1385607.jpg" alt="kitty"/>
-                    <img id="img2" className="imageToShow" src="https://placekitten.com/300/700?image=2"
+                    <img id="img1" className="imageToShow" src={image1} alt="kitty"/>
+                    <img id="img2" className="imageToShow" src={image2}
                          alt="kitty"/>
                     <blockquote id="text1" className="textToShow"
                                 cite="https://www.youtube.com/watch?v=PKffm2uI4dk">
@@ -119,7 +123,7 @@ const PinnedSideImages = () => {
                             trap!</p>
                         <footer>— Fluffy, the kitten <cite>Sad Cat Diary</cite></footer>
                     </blockquote>
-                    <img id="img3" className="imageToShow" src="https://placekitten.com/300/700?image=3"
+                    <img id="img3" className="imageToShow" src={image3}
                          alt="kitty"/>
                 </div>
 

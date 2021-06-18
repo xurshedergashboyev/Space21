@@ -5,8 +5,7 @@ import PolymorphJs from "../../polymorphJs";
 import ProgrammingSection from "../../programmingSection";
 import TargetMultipleItems from "../../targetMultipleItems";
 import HeaderCta from "../../headerCta";
-
-
+import ContactSection from "../../contactSection";
 
 
 
@@ -19,7 +18,8 @@ const LandingPage = () => {
             <PolymorphJs/>
             <TargetMultipleItems />
             <ProgrammingSection/>
-            {/*<ScrollToViewGallery/>*/}
+            <ContactSection />
+            {/*/!*<ScrollToViewGallery/>*!/*/}
         </>
     )
 }

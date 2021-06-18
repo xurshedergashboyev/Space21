@@ -95,7 +95,7 @@ a {
 }
 
 #s2d0 {
-    background-image: url('https://images.unsplash.com/photo-1600084923679-df34592b60a2?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ');
+    background-image: url("../images/04.jpg");
     position: fixed;
     background-size: cover;
     top: 0;

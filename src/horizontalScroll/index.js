@@ -2,7 +2,18 @@ import React, {useEffect, useRef} from 'react';
 import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import './style.css';
-import { Container, Panel, Red, PanelItem, PanelItemText } from "./style";
+import {
+    Container,
+    Panel,
+    Red,
+    PanelItem,
+    PanelItemText,
+    FirstPanelAbsolute,
+    SecondPanelAbsolute,
+    ThirdPanelAbsolute,
+    FourthPanelAbsolute,
+    FifthPanelAbsolute
+} from "./style";
 
 const HorizontalScroll = () => {
     gsap.registerPlugin(ScrollTrigger);
@@ -77,7 +88,23 @@ const HorizontalScroll = () => {
                         </PanelItemText>
                     </PanelItem>
                 </Panel>
-                <Red className="panel2 panel"/>
+                <Red className="panel2 panel">
+                    <FirstPanelAbsolute>
+                        Programming
+                    </FirstPanelAbsolute>
+                    <SecondPanelAbsolute>
+                        Design
+                    </SecondPanelAbsolute>
+                    <ThirdPanelAbsolute>
+                        SMM
+                    </ThirdPanelAbsolute>
+                    <FourthPanelAbsolute>
+                        Branding
+                    </FourthPanelAbsolute>
+                    <FifthPanelAbsolute>
+                        Logo
+                    </FifthPanelAbsolute>
+                </Red>
             </Container>
         </>
     )
