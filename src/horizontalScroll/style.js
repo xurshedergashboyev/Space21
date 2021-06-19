@@ -28,6 +28,8 @@ export const PanelItemText = styled.h1 `
 export const Red = styled(Panel) `
   background-color: #f6f6f6;
   position:relative;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Orange = styled(Panel) `
@@ -55,50 +57,56 @@ export const PanelText = styled.div `
   margin-top: 300px;
 `;
 
-export const FirstPanelAbsolute = styled.h1 `
+export const FirstPanelAbsolute = styled.div `
+  font-family: "Couture Bold", sans-serif;
+  position: absolute;
+  top: 38%;
+  left: 0;
+  font-size: 200px;
+  color: #000000;
+  //background-color: #fddb3a;
+`;
+
+
+export const SecondPanelAbsolute = styled.div `
 font-family: "Couture Bold", sans-serif;
   position: absolute;
-  top: 20%;
-  left: 10%;
-  font-size: 250px;
-  color: #a7a7a7;
+  bottom: -5%;
+  left: 0;
+  font-size: 190px;
+  color: #3e3e3e;
+  //background-color: #afafaf;
 `;
 
-export const SecondPanelAbsolute = styled.h1 `
-font-family: "Couture Bold", sans-serif;
-  position: absolute;
-  top: 65%;
-  right: 35%;
-  font-size: 280px;
-  color: #4e4e4e;
-`;
-
-export const ThirdPanelAbsolute = styled.h1 `
+export const ThirdPanelAbsolute = styled.div `
   font-family: "Couture Bold", sans-serif;
   position: absolute;
-  top: 0;
-  right: 20%;
-  font-size: 280px;
-  color: #808080;
+  top: -5%;
+  right: 0;
+  font-size: 230px;
+  color: #afafaf;
   z-index: -1;
+  //background-color: #222222;
 `;
 
-export const FourthPanelAbsolute = styled.h1 `
+export const FourthPanelAbsolute = styled.div `
   font-family: "Couture Bold", sans-serif;
   position: absolute;
-  top: 40%;
-  right: 10%;
-  font-size: 200px;
-  color: #363636;
-  z-index: -1;
+  bottom: -5%;
+  right: 0;
+  font-size: 190px;
+  color: #ffffff;
+  //background-color: #000000;
+  z-index: 1;
 `;
 
-export const FifthPanelAbsolute = styled.h1 `
+export const FifthPanelAbsolute = styled.div `
   font-family: "Couture Bold", sans-serif;
   position: absolute;
-  top: 0;
-  left: 10%;
-  font-size: 200px;
+  top: -5%;
+  left: 0;
+  font-size: 230px;
   color: #363636;
+  //background-color: #c2c2c2;
   z-index: -1;
 `;

@@ -34,48 +34,57 @@ const HorizontalScroll = () => {
             }
         });
 
-
-        let tl = gsap.timeline({
-            // yes, we can add it to an entire timeline!
-            scrollTrigger: {
-                trigger: ".text-text",
-                start: "bottom center", // when the top of the trigger hits the top of the viewport
-                end: "+=500", // end after scrolling 500px beyond the start
-                scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-                snap: {
-                    snapTo: "labels", // snap to the closest label in the timeline
-                    duration: {min: 0.2, max: 3}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-                    delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
-                    ease: "power1.inOut" // the ease of the snap animation ("power3" by default)
-                }
-            }
-        });
-
-// add animations and labels to the timeline
-        tl.addLabel("start")
-            .from(".text-text", {scale: 0.3, autoAlpha: 0})
-            .addLabel("color")
-
-        // gsap.to('#panel-item', {
+        // let time = gsap.timeline({
         //     scrollTrigger: {
-        //         scrub: .5,
-        //         start: "top",
-        //     },
-        //     x: "500%"
-        // })
-        // gsap.to('.panel2', {
-        //     scrollTrigger: {
-        //         trigger: '.panel2',
-        //         scrub: 1,
-        //         snap: true,
+        //         trigger: ".panel",
+        //         scrub: true,
+        //         pin: true,
         //         markers: true,
-        //         start: 'bottom center',
+        //         end: 'bottom bottom'
+        //     }
+        // });
         //
-        //         pin: true
+        // time.fromTo("#first-panel", {
+        //     opacity: 0
+        // }, {
+        //     opacity: 1
+        // })
+        //     .fromTo("#second-panel", {
+        //         opacity: 0
+        //     }, {
+        //         opacity: 1
+        //     })
+        //     .fromTo("#third-panel", {
+        //         opacity: 0
+        //     }, {
+        //         opacity: 1
+        //     })
+        //     .fromTo("#fourth-panel", {
+        //         opacity: 0
+        //     }, {
+        //         opacity: 1
+        //     })
+        //     .fromTo("#fifth-panel", {
+        //         opacity: 0
+        //     }, {
+        //         opacity: 1
+        // //     })
+        // gsap.to("#first-panel", {
+        //     scrollTrigger: {
+        //         trigger: ".panel2",
+        //         scrub: true,
         //     },
-        //     backgroundColor: '#222',
-        //     duration: .5,
-        //     ease: "easeInOut"
+        //     color: "#fff",
+        //     backgroundColor: "#000"
+        // })
+        // gsap.to("#absolute-panels", {
+        //     scrollTrigger: {
+        //         trigger: ".panel2",
+        //         scrub: true,
+        //     },
+        //     position: "fixed",
+        //     top: 10,
+        //     left: 10,
         // })
     })
     return (
@@ -89,22 +98,24 @@ const HorizontalScroll = () => {
                     </PanelItem>
                 </Panel>
                 <Red className="panel2 panel">
-                    <FirstPanelAbsolute>
-                        Programming
-                    </FirstPanelAbsolute>
-                    <SecondPanelAbsolute>
-                        Design
-                    </SecondPanelAbsolute>
-                    <ThirdPanelAbsolute>
-                        SMM
-                    </ThirdPanelAbsolute>
-                    <FourthPanelAbsolute>
-                        Branding
+                        <FirstPanelAbsolute id="first-panel">
+                            Programming
+                        </FirstPanelAbsolute>
+                        <SecondPanelAbsolute id="second-panel">
+                            Branding
+                        </SecondPanelAbsolute>
+                        <ThirdPanelAbsolute id="third-panel">
+                            Design
+                        </ThirdPanelAbsolute>
+
+                    <FourthPanelAbsolute id="fourth-panel">
+                        Smm
                     </FourthPanelAbsolute>
-                    <FifthPanelAbsolute>
+                    <FifthPanelAbsolute id="fifth-panel">
                         Logo
                     </FifthPanelAbsolute>
                 </Red>
+
             </Container>
         </>
     )

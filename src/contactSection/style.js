@@ -54,7 +54,10 @@ export const ContainerText = styled.p`
   font-size: 100px;
   color: #222;
   transition: .5s;
-  //background: radial-gradient(circle 100px at var(--x,0) var(--y,0), #747474 99%, #f6f6f6 100%) fixed;
+  @media screen and (max-width: 700px) {
+     font-size: 50px;
+  }
+  }
   &:hover {
       background: radial-gradient(circle 100px at var(--x,0) var(--y,0), #000000 99%, #f6f6f6 100%) fixed;
       -webkit-background-clip: text;
@@ -74,6 +77,7 @@ export const ContainerText = styled.p`
             background: radial-gradient(circle 50px at var(--x,0) var(--y,0), #000000 99%, #f6f6f6 100%) fixed;
           }
       }
+     
 `;
 
 export const ContainerImage = styled.div`
