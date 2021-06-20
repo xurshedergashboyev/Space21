@@ -24,8 +24,9 @@ const HeaderCta = () => {
     return (
         <>
             <Wrapper>
-                <Text id="text">Hello Guys, We
-                    are team of Space21</Text>
+                <Text id="text">Minimalism+</Text>
+                <Text id="text">Simplicity+</Text>
+                <Text id="text">Creativity+</Text>
             </Wrapper>
         </>
     )

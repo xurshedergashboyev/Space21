@@ -92,10 +92,12 @@ a {
     display: block;
     z-index: -1;
     height: 400vh;
+    background-color: #222222;
 }
 
 #s2d0 {
     background-image: url("../images/04.jpg");
+    filter: brightness(30%);
     position: fixed;
     background-size: cover;
     top: 0;
@@ -103,6 +105,11 @@ a {
     bottom: 0;
     left: 0;
     visibility: hidden;
+}
+
+#s2d1, #s2d2, #s2d3, #s2d4, #s2d5 {
+    color: #f6f6f6
+;
 }
 
 .s2 {

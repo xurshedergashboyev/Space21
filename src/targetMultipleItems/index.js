@@ -84,7 +84,9 @@ const TargetMultipleItems = () => {
         tl.to('#s2d4', {autoAlpha: 0, delay: 1});
         tl.to('#s2d5', {autoAlpha: 1});
         tl.to('#s2d5', {autoAlpha: 0, delay: 1});
-
+        tl.to("#box2", {
+            backgroundColor: "#f6f6f6"
+        })
 // countless lives
         gsap.to('#s3d1', {
             autoAlpha:1,

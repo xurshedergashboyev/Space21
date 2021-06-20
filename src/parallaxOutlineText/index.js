@@ -7,7 +7,6 @@ const ParallaxOutlineText = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     useEffect(() => {
-        const tl = gsap.timeline()
         let viewHeight = window.innerHeight;
 
         let textContainers = document.querySelectorAll('.text-container');
@@ -44,18 +43,18 @@ const ParallaxOutlineText = () => {
         });
 
 
-        ScrollTrigger.create({
-            trigger: ".section-section",
-            start: "top center",
-            scrub: true,
-            animation: tl,
-            onLeave: () => gsap.to(".section-section", {
-                duration: 1,
-                backgroundColor: "#f6f6f6",
-                autoAlpha: 1,
-                color: "#222"
-            }),
-        })
+        // ScrollTrigger.create({
+        //     trigger: ".section-section",
+        //     start: "top center",
+        //     scrub: true,
+        //     animation: tl,
+        //     onLeave: () => gsap.to(".section-section", {
+        //         duration: 1,
+        //         backgroundColor: "#f6f6f6",
+        //         autoAlpha: 1,
+        //         color: "#222"
+        //     }),
+        // })
         // ScrollTrigger.create({
         //     trigger: ".parallax-text",
         //     start: "top center",
@@ -74,50 +73,50 @@ const ParallaxOutlineText = () => {
     })
     return (
         <>
-            <main>
-                <section className="section-section">
-                    <div className="image-container parallax" data-depth='-2'>
-                        <div className="image-container__inner parallax" data-depth='1'>
-                            <img
-                                src="https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?ixlib=rb-1.2.1&auto=format&fit=crop&w=2168&q=80"
-                                alt="Avocado" className="parallax-image"/>
-                        </div>
-                    </div>
+            <main className="main-parallax">
+                {/*<section className="section-section">*/}
+                {/*    /!*<div className="image-container parallax" data-depth='-2'>*!/*/}
+                {/*    /!*    <div className="image-container__inner parallax" data-depth='1'>*!/*/}
+                {/*    /!*        <img*!/*/}
+                {/*    /!*            src="https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?ixlib=rb-1.2.1&auto=format&fit=crop&w=2168&q=80"*!/*/}
+                {/*    /!*            alt="Avocado" className="parallax-image"/>*!/*/}
+                {/*    /!*    </div>*!/*/}
+                {/*    /!*</div>*!/*/}
 
-                    <div className="text-container text-container__front">
-                        <h2 className="parallax-text">
-                            Follow me for more tutorials
-                        </h2>
-                        <h2 className="parallax-text">
-                            Double tap to like this post
-                        </h2>
-                    </div>
-                </section>
+                {/*    <div className="text-container text-container__front">*/}
+                {/*        <h2 className="parallax-text">*/}
+                {/*            Development Development*/}
+                {/*        </h2>*/}
+                {/*        <h2 className="parallax-text">*/}
+                {/*            SMM SMM SMM*/}
+                {/*        </h2>*/}
+                {/*    </div>*/}
+                {/*</section>*/}
 
                 <section className="section-section">
                     <div className="text-container text-container__back">
                         <h2 className="parallax-text">
-                            Follow me for more tutorials
+                            Design Design Design
                         </h2>
                         <h2 className="parallax-text">
-                            Double tap to like this post
+                            Branding Branding
                         </h2>
                     </div>
 
-                    <div className="image-container parallax" data-depth='-2'>
-                        <div className="image-container__inner parallax" data-depth='1'>
-                            <img
-                                src="https://images.unsplash.com/photo-1458819714733-e5ab3d536722?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80"
-                                alt="Avocado" className="parallax-image"/>
-                        </div>
-                    </div>
+                    {/*<div className="image-container parallax" data-depth='-2'>*/}
+                    {/*    <div className="image-container__inner parallax" data-depth='1'>*/}
+                    {/*        <img*/}
+                    {/*            src="https://images.unsplash.com/photo-1458819714733-e5ab3d536722?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80"*/}
+                    {/*            alt="Avocado" className="parallax-image"/>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
 
                     <div className="text-container text-container__front">
                         <h2 className="parallax-text">
-                            Follow me for more tutorials
+                            Logo Logo Logo Logo Logo Logo Logo Logo
                         </h2>
                         <h2 className="parallax-text">
-                            Double tap to like this post
+                            Poligraphy Poligraphy Poligraphy Poligraphy
                         </h2>
                     </div>
                 </section>

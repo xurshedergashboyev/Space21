@@ -27,7 +27,6 @@ export const Mask = styled(Link) `
   font-size: 100px;
   line-height: 1.2;
   letter-spacing: -0.03em;
-  font-family: Helvetica, Arial, sans-serif;
   background: radial-gradient(circle 100px at var(--x,0) var(--y,0), #747474 99%, #f6f6f6 100%) fixed;
   -webkit-background-clip: text;
   color: transparent;

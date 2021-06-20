@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const ComparisonSection = styled.section`
   position: relative;
   padding-bottom: 56.25%; 
-  margin-bottom: 100px;
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;

@@ -6,6 +6,7 @@ import ProgrammingSection from "../../programmingSection";
 import TargetMultipleItems from "../../targetMultipleItems";
 import HeaderCta from "../../headerCta";
 import ContactSection from "../../contactSection";
+import HorizontalScroll from "../../horizontalScroll";
 
 
 
@@ -16,6 +17,7 @@ const LandingPage = () => {
             <Example/>
             <ParallaxOutlineText/>
             <PolymorphJs/>
+            <HorizontalScroll />
             <TargetMultipleItems />
             <ProgrammingSection/>
             <ContactSection />

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
+.main-parallax  {
+    background-color: #222222;
+}
+
 .section-section {
     position: relative;
     padding: 10vw 0;
@@ -32,32 +36,49 @@
 .text-container{
     position: absolute;
     z-index: 1;
-    top: 100%;
+    top: 20%;
     left: 0;
     display: flex;
     flex-direction: column;
     width: 100%;
     transform: translateY(-50%);
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #f6f6f6;
 }
 
 .text-container__front {
     z-index: 3;
 }
 
+.text-container__back {
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transform: translateY(-50%);
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #f6f6f6;
+}
+
 .text-container__front > .parallax-text{
     color: transparent;
     -webkit-text-stroke: 0.2vw #f6f6f6;
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #f6f6f6;
 
 }
 
 .parallax-text {
     position: relative;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12vw;
+    font-family: 'Couture Bold', sans-serif;
+    font-size: 10vw;
     line-height: 10vw;
     text-transform: uppercase;
     white-space: nowrap;
-    color: #222222;
+    color: #f6f6f6;
     margin: 0;
 }
 
