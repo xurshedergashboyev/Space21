@@ -21,6 +21,7 @@ export const NavbarWrapper = styled.div `
 
 export const Mask = styled(Link) `
   margin: 0;
+  
   p {
         position: relative;
   display: inline-block;
@@ -32,6 +33,8 @@ export const Mask = styled(Link) `
   color: transparent;
   -webkit-text-fill-color: transparent;
   transition: all 0.5s ease-in-out;
+    cursor: url("https://www.somoswaka.com/wp-content/uploads/2017/10/WAKA-cursor-hover.png") 25 30, auto;
+
   @media screen and (max-width: 550px) {
             background: radial-gradient(circle 50px at var(--x,0) var(--y,0), #747474 99%, #f6f6f6 100%) fixed;
             -webkit-background-clip: text;

@@ -124,7 +124,7 @@ a {
 }
 
 #box3 {
-    height: 500vh;
+    height: 300vh;
     display: block;
     z-index: -10;
     position: relative;

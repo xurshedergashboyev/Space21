@@ -2,7 +2,20 @@ import React, {useEffect} from 'react';
 import './style.css';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from "gsap/ScrollTrigger";
-import {GridLayer, GridContainer, GridBlock, Grid} from "./style";
+import {
+    GridLayer,
+    GridContainer,
+    GridBlock1,
+    Grid,
+    GridBlock2,
+    GridBlock3,
+    GridBlock4,
+    GridBlock5,
+    GridBlock6,
+    GridBlock7,
+    GridBlock8,
+    GridBlock9
+} from "./style";
 
 const ScrollToViewGallery = () => {
     gsap.registerPlugin(ScrollTrigger)
@@ -26,7 +39,7 @@ const ScrollToViewGallery = () => {
             });
 
         const size = Math.max(window.innerWidth, window.innerHeight);
-        gsap.set('.gridBlock', {backgroundImage: i => `url(https://picsum.photos/${size}/${size}?random=${i})`});
+        // gsap.set('.gridBlock', {backgroundImage: i => `url(https://picsum.photos/${size}/${size}?random=${i})`});
 
         const bigImg = new Image();
         bigImg.addEventListener("load", function () {
@@ -41,31 +54,31 @@ const ScrollToViewGallery = () => {
             <GridContainer className="grid-container">
                 <Grid className="grid">
                     <GridLayer className="gridLayer">
-                        <GridBlock className="gridBlock"/>
+                        <GridBlock1 className="gridBlock"/>
                     </GridLayer>
                     <GridLayer className="gridLayer">
-                        <GridBlock className="gridBlock"/>
+                        <GridBlock2 className="gridBlock"/>
                     </GridLayer>
                     <GridLayer className="gridLayer">
-                        <GridBlock className="gridBlock"/>
+                        <GridBlock3 className="gridBlock"/>
                     </GridLayer>
                     <GridLayer className="gridLayer centerPiece">
-                        <GridBlock className="gridBlock centerBlock"/>
+                        <GridBlock4 className="gridBlock centerBlock"/>
                     </GridLayer>
                     <GridLayer className="gridLayer">
-                        <GridBlock className="gridBlock"/>
+                        <GridBlock5 className="gridBlock"/>
                     </GridLayer>
                     <GridLayer className="gridLayer">
-                        <GridBlock className="gridBlock"/>
+                        <GridBlock6 className="gridBlock"/>
                     </GridLayer>
                     <GridLayer className="gridLayer">
-                        <GridBlock className="gridBlock"/>
+                        <GridBlock7 className="gridBlock"/>
                     </GridLayer>
                     <GridLayer className="gridLayer">
-                        <GridBlock className="gridBlock"/>
+                        <GridBlock8 className="gridBlock"/>
                     </GridLayer>
                     <GridLayer className="gridLayer">
-                        <GridBlock className="gridBlock"/>
+                        <GridBlock9 className="gridBlock"/>
                     </GridLayer>
                 </Grid>
             </GridContainer>

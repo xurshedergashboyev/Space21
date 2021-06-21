@@ -1,6 +1,9 @@
 import React, {useEffect} from 'react';
 import {gsap} from "gsap";
 import { AfterImage, AfterImg, BeforeImage, ComparisonImg, ComparisonSection} from "./style";
+import imageFirst from '../images/Web 1366 – 1.png';
+import imageSecond from '../images/02.png';
+
 
 const Example = () => {
     useEffect(() => {
@@ -31,10 +34,10 @@ const Example = () => {
         <>
             <ComparisonSection className="comparisonSection">
                 <BeforeImage className="comparisonImage beforeImage">
-                    <ComparisonImg src="https://b14.dk/14years/images/karaoke/karaoke-japaneese.svg" alt=""/>
+                    <ComparisonImg src={imageSecond} alt=""/>
                 </BeforeImage>
                 <AfterImage className="comparisonImage afterImage">
-                    <AfterImg src="https://b14.dk/14years/images/karaoke/karaoke-roman.svg" alt=""/>
+                    <AfterImg src={imageFirst} alt=""/>
                 </AfterImage>
             </ComparisonSection>
         </>
@@ -42,3 +45,5 @@ const Example = () => {
 }
 
 export default Example;
+
+// "https://b14.dk/14years/images/karaoke/karaoke-roman.svg"

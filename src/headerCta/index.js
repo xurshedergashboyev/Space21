@@ -1,32 +1,52 @@
 import React, {useEffect} from 'react'
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
-import {Wrapper, Text} from "./style";
+import {Wrapper, Text, TextBottom} from "./style";
 
 
 const HeaderCta = () => {
     gsap.registerPlugin(ScrollTrigger);
     useEffect(() => {
-        const tl = gsap.timeline();
-
-        tl.to("#text", {
+        gsap.to("#header-text-absolute",{
+            scrollTrigger: {
+                trigger: "#header-text-absolute",
+                start: "top 80%",
+                scrub: true,
+            },
             x: -250
         })
-
-        ScrollTrigger.create({
-            trigger: "#text",
-            animation: tl,
-            pin: true,
-            start: "top top",
-            scrub: 1,
+        ScrollTrigger.matchMedia({
+            "(min-width: 800px)" : function() {
+                gsap.to("#header-text", {
+                    scrollTrigger: {
+                        trigger: "#header-text",
+                        start: "top top",
+                        scrub: true,
+                    },
+                    x: 250
+                })
+            },
+            "(max-width: 799px)" : function() {
+                gsap.to("#header-text", {
+                    scrollTrigger: {
+                        trigger: "#header-text",
+                        start: "top top",
+                        scrub: true,
+                    },
+                    x: 20
+                })
+            },
         })
     })
     return (
         <>
             <Wrapper>
-                <Text id="text">Minimalism+</Text>
-                <Text id="text">Simplicity+</Text>
-                <Text id="text">Creativity+</Text>
+                <Text id="header-text">Minimalism+</Text>
+                <Text id="header-text">Simplicity+</Text>
+                <Text id="header-text">Creativity</Text>
+                <TextBottom id="header-text-absolute">
+                    We call it leftright thinking
+                </TextBottom>
             </Wrapper>
         </>
     )

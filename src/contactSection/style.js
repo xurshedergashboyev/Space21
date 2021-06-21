@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {Link} from 'react-router-dom'
 
 export const Wrapper = styled.div`
   width: 100vw;
@@ -6,6 +7,10 @@ export const Wrapper = styled.div`
   background-color: #f6f6f6;
   padding: 100px;
   margin-bottom: 800px;
+  @media screen and (max-width: 700px) {
+     padding: 50px;
+     height: 70vh;
+  }
 `;
 
 export const Container = styled.div`
@@ -25,7 +30,7 @@ export const ContainerTextWrapper = styled.div`
 
 export const ContainerDesc = styled.p`
   font-family: "Couture Bold", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   color: #222;
   //background: radial-gradient(circle 100px at var(--x,0) var(--y,0), #747474 99%, #f6f6f6 100%) fixed;
   &:hover {
@@ -49,18 +54,25 @@ export const ContainerDesc = styled.p`
       }
 `;
 
-export const ContainerText = styled.p`
+export const ContainerText = styled(Link)`
   font-family: "Couture Bold", sans-serif;
-  font-size: 100px;
+  font-size: 150px;
   color: #222;
-  transition: .5s;
-  @media screen and (max-width: 700px) {
-     font-size: 50px;
+  transition: .3s ease-in-out;
+  cursor: url("https://www.somoswaka.com/wp-content/uploads/2017/10/WAKA-cursor-hover.png") 25 30, auto;
+  @media screen and (max-width: 1000px) {
+     font-size: 100px;
   }
+  @media screen and (max-width: 700px) {
+     font-size: 70px;
   }
   &:hover {
       background: radial-gradient(circle 100px at var(--x,0) var(--y,0), #000000 99%, #f6f6f6 100%) fixed;
       -webkit-background-clip: text;
+      #arrow-icon {
+        transition: .3s ease-in-out;
+        margin-bottom: 20px;
+      }
       @media screen and (max-width: 550px) {
             background: radial-gradient(circle 50px at var(--x,0) var(--y,0), #000000 99%, #f6f6f6 100%) fixed;
             -webkit-background-clip: text;
@@ -79,6 +91,16 @@ export const ContainerText = styled.p`
       }
      
 `;
+
+export const ArrowImage = styled.img `
+  width: 100px;
+  height: auto;
+  transform: rotate(90deg);
+  margin-left: 10px;
+  @media screen and (max-width: 700px) {
+     width: 40px;
+  }
+`
 
 export const ContainerImage = styled.div`
   width: 200vw;

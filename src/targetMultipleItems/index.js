@@ -74,19 +74,19 @@ const TargetMultipleItems = () => {
             }
         });
 
-        tl.to('#s2d1', {autoAlpha: 1});
-        tl.to('#s2d1', {autoAlpha: 0, delay: 1});
-        tl.to('#s2d2', {autoAlpha: 1});
-        tl.to('#s2d2', {autoAlpha: 0, delay: 1});
-        tl.to('#s2d3', {autoAlpha: 1});
-        tl.to('#s2d3', {autoAlpha: 0, delay: 1});
-        tl.to('#s2d4', {autoAlpha: 1});
-        tl.to('#s2d4', {autoAlpha: 0, delay: 1});
+        // tl.to('#s2d1', {autoAlpha: 1});
+        // tl.to('#s2d1', {autoAlpha: 0, delay: 1});
+        // tl.to('#s2d2', {autoAlpha: 1});
+        // tl.to('#s2d2', {autoAlpha: 0, delay: 1});
+        // tl.to('#s2d3', {autoAlpha: 1});
+        // tl.to('#s2d3', {autoAlpha: 0, delay: 1});
+        // tl.to('#s2d4', {autoAlpha: 1});
+        // tl.to('#s2d4', {autoAlpha: 0, delay: 1});
         tl.to('#s2d5', {autoAlpha: 1});
         tl.to('#s2d5', {autoAlpha: 0, delay: 1});
-        tl.to("#box2", {
-            backgroundColor: "#f6f6f6"
-        })
+        // tl.to("#box2", {
+        //     backgroundColor: "#f6f6f6"
+        // })
 // countless lives
         gsap.to('#s3d1', {
             autoAlpha:1,
@@ -128,20 +128,19 @@ const TargetMultipleItems = () => {
     })
     return (
         <>
-            <div id="box1">
-                this is just a spacer ,scroll down
-            </div>
+            {/*<div id="box1">*/}
+            {/*    this is just a spacer ,scroll down*/}
+            {/*</div>*/}
             <div id="box2">
-                <div id="s2d0"/>
-                <div id="s2d1" className="s2">LINE 1</div>
-                <div id="s2d2" className="s2">LINE 2</div>
-                <div id="s2d3" className="s2">LINE 3</div>
-                <div id="s2d4" className="s2">LINE 4</div>
+                {/*<div id="s2d0"/>*/}
+                {/*<div id="s2d1" className="s2">LINE 1</div>*/}
+                {/*<div id="s2d2" className="s2">LINE 2</div>*/}
+                {/*<div id="s2d3" className="s2">LINE 3</div>*/}
+                {/*<div id="s2d4" className="s2">LINE 4</div>*/}
                 <div id="s2d5" className="s2">This is where the background should fade out on scroll</div>
             </div>
 
             <div id="box3">
-                <div id="s3d1">THIS IS THE LINE THAT PLAYS FORWARD BUT NOT BACKWARD</div>
                 <div id="s3names">
                     <span className="s3name">JOHN CRAWFORD III</span>
                     <span className="s3name">MICHAEL BROWN</span>

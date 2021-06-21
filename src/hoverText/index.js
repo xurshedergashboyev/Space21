@@ -18,14 +18,14 @@ const  HoverText = ({isOpen, callback}) => {
                     Space21_
                 </p>
             </Mask>
+            <Mask className="mask" to="/portfolio">
+                <p>
+                    Portfolio_
+                </p>
+            </Mask>
             <Mask className="mask" to="/about-us">
                 <p>
                     About Us_
-                </p>
-            </Mask>
-            <Mask className="mask" to="/our-services">
-                <p>
-                    Our Services
                 </p>
             </Mask>
             <Mask className="mask" onClick={callback} >

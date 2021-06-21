@@ -1,18 +1,100 @@
 import styled from 'styled-components'
+import image1 from '../images/walling-SQIpFNb0Nk4-unsplash.jpg'
+import image2 from '../images/alexandru-acea--WBYxmW4yuw-unsplash.jpg'
+import image3 from '../images/8.jpg'
+import image4 from '../images/1.jpg'
+import image5 from '../images/2.jpg'
+import image6 from '../images/04.jpg'
+import image7 from '../images/9.jpg'
+import image8 from '../images/pexels-eva-elijas-6956316.jpg'
+import image9 from '../images/pexels-nataliya-vaitkevich-6120166.jpg'
 
-
-export const GridBlock = styled.div `
+export const GridBlock1 = styled.div `
   opacity: 0;
       background-size: cover;
     background-color: darkgray;
         display: block;
     position: absolute;
+    background-image: url(${image1});
+`;
+export const GridBlock2 = styled.div `
+  opacity: 0;
+      background-size: cover;
+    background-color: darkgray;
+        display: block;
+    position: absolute;
+        background-image: url(${image2});
+
+`;
+export const GridBlock3 = styled.div `
+  opacity: 0;
+      background-size: cover;
+    background-color: darkgray;
+        display: block;
+    position: absolute;
+        background-image: url(${image3});
+
+`;
+export const GridBlock4 = styled.div `
+  opacity: 0;
+      background-size: cover;
+    background-color: darkgray;
+        display: block;
+    position: absolute;
+        background-image: url(${image4});
+
+`;
+export const GridBlock5 = styled.div `
+  opacity: 0;
+      background-size: cover;
+    background-color: darkgray;
+        display: block;
+    position: absolute;
+        background-image: url(${image5});
+
+`;
+export const GridBlock6 = styled.div `
+  opacity: 0;
+      background-size: cover;
+    background-color: darkgray;
+        display: block;
+    position: absolute;
+        background-image: url(${image6});
+
+`;
+export const GridBlock7 = styled.div `
+  opacity: 0;
+      background-size: cover;
+    background-color: darkgray;
+        display: block;
+    position: absolute;
+        background-image: url(${image7});
+
+`;
+export const GridBlock8 = styled.div `
+  opacity: 0;
+      background-size: cover;
+    background-color: darkgray;
+        display: block;
+    position: absolute;
+        background-image: url(${image8});
+
+`;
+export const GridBlock9 = styled.div `
+  opacity: 0;
+      background-size: cover;
+    background-color: darkgray;
+        display: block;
+    position: absolute;
+        background-image: url(${image9});
+
 `;
 
 export const GridContainer = styled.div `
   width: 100vw;
   height: 400vh;
   position: relative;
+  overflow-x: hidden;
 `;
 
 export const Grid = styled.div `

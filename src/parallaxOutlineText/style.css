@@ -36,7 +36,7 @@
 .text-container{
     position: absolute;
     z-index: 1;
-    top: 20%;
+    top: 60%;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -53,7 +53,20 @@
 .text-container__back {
     position: absolute;
     z-index: 1;
-    top: 60%;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transform: translateY(-50%);
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.text-container__middle {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -64,8 +77,6 @@
 }
 
 .text-container__front > .parallax-text{
-    color: transparent;
-    -webkit-text-stroke: 0.2vw #f6f6f6;
     border-top: 1px solid #f6f6f6;
     border-bottom: 1px solid #f6f6f6;
 
@@ -80,5 +91,10 @@
     white-space: nowrap;
     color: #f6f6f6;
     margin: 0;
+}
+
+.parallax-text-second {
+    color: transparent;
+    -webkit-text-stroke: 0.2vw #f6f6f6;
 }
 

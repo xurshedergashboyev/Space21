@@ -1,6 +1,5 @@
 import React from 'react'
-import {Wrapper, ContainerDesc, ContainerText, ContainerTextWrapper, Container} from "./style";
-
+import {Wrapper, ContainerDesc, ContainerText, ContainerTextWrapper, Container, ArrowImage} from "./style";
 
 const ContactSection = () => {
     return (
@@ -9,12 +8,13 @@ const ContactSection = () => {
                 <Container>
                     <ContainerTextWrapper>
                         <ContainerDesc>
-                            14 years of
+                            Wanna know something more?
                         </ContainerDesc>
                     </ContainerTextWrapper>
                     <ContainerTextWrapper>
-                        <ContainerText>
-                            Contact
+                        <ContainerText to="/portfolio">
+                            Portfolio
+                            <ArrowImage src="https://www.somoswaka.com/wp-content/uploads/2017/10/WAKA-cursor.png" alt="arrow" id="arrow-icon"/>
                         </ContainerText>
                     </ContainerTextWrapper>
                 </Container>

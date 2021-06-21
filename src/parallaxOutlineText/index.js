@@ -98,7 +98,7 @@ const ParallaxOutlineText = () => {
                         <h2 className="parallax-text">
                             Design Design Design
                         </h2>
-                        <h2 className="parallax-text">
+                        <h2 className="parallax-text parallax-text-second">
                             Branding Branding
                         </h2>
                     </div>
@@ -115,8 +115,16 @@ const ParallaxOutlineText = () => {
                         <h2 className="parallax-text">
                             Logo Logo Logo Logo Logo Logo Logo Logo
                         </h2>
-                        <h2 className="parallax-text">
+                        <h2 className="parallax-text parallax-text-second">
                             Poligraphy Poligraphy Poligraphy Poligraphy
+                        </h2>
+                    </div>
+                    <div className="text-container text-container__middle">
+                        <h2 className="parallax-text">
+                            Web/Mobile Web/Mobile Web/Mobile
+                        </h2>
+                        <h2 className="parallax-text parallax-text-second">
+                            Web Design Web Design Web Design
                         </h2>
                     </div>
                 </section>
