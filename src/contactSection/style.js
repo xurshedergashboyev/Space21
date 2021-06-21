@@ -66,6 +66,12 @@ export const ContainerText = styled(Link)`
   @media screen and (max-width: 700px) {
      font-size: 70px;
   }
+  @media screen and (max-width: 450px) {
+     font-size: 50px;
+  }
+  @media screen and (max-width: 350px) {
+     font-size: 40px;
+  }
   &:hover {
       background: radial-gradient(circle 100px at var(--x,0) var(--y,0), #000000 99%, #f6f6f6 100%) fixed;
       -webkit-background-clip: text;

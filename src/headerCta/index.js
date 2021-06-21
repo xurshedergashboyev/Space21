@@ -7,14 +7,6 @@ import {Wrapper, Text, TextBottom} from "./style";
 const HeaderCta = () => {
     gsap.registerPlugin(ScrollTrigger);
     useEffect(() => {
-        gsap.to("#header-text-absolute",{
-            scrollTrigger: {
-                trigger: "#header-text-absolute",
-                start: "top 80%",
-                scrub: true,
-            },
-            x: -250
-        })
         ScrollTrigger.matchMedia({
             "(min-width: 800px)" : function() {
                 gsap.to("#header-text", {
@@ -34,6 +26,28 @@ const HeaderCta = () => {
                         scrub: true,
                     },
                     x: 20
+                })
+            },
+        })
+        ScrollTrigger.matchMedia({
+            "(min-width: 800px)" : function() {
+                gsap.to("#header-text-absolute", {
+                    scrollTrigger: {
+                        trigger: "#header-text-absolute",
+                        start: "top 80%",
+                        scrub: true,
+                    },
+                    x: -250
+                })
+            },
+            "(max-width: 799px)" : function() {
+                gsap.to("#header-text-absolute", {
+                    scrollTrigger: {
+                        trigger: "#header-text-absolute",
+                        start: "top top",
+                        scrub: true,
+                    },
+                    x: -20
                 })
             },
         })

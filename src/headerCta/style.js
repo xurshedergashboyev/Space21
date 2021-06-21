@@ -25,6 +25,9 @@ export const Text = styled.h1 `
   @media screen and (max-width: 600px) {
     font-size: 50px;
   }
+  @media screen and (max-width: 450px) {
+    font-size: 40px;
+  }
 `;
 
 export const TextBottom = styled.h1 `
@@ -34,8 +37,11 @@ export const TextBottom = styled.h1 `
   right: 30px;
   text-align: right;
   max-width: 550px;
-  
+  font-weight: 300;
   @media screen and (max-width: 590px) {
     font-size: 40px;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 30px;
   }
 `;
