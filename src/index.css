@@ -32,6 +32,10 @@ body {
   color: #fddb3a;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .overlay {
   overflow: hidden;
   position: absolute;

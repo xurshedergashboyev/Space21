@@ -53,16 +53,6 @@ const TargetMultipleItems = () => {
             }
         })
 
-// Hide the american flag
-        gsap.to('#s2d0', {
-            autoAlpha:0,
-            scrollTrigger: {
-                trigger: "#box3",
-                scrub: true,
-                start: "top bottom",
-                end: "+=500",
-            }
-        })
 
 // The text in section 2
         const tl = gsap.timeline({
@@ -70,9 +60,10 @@ const TargetMultipleItems = () => {
                 trigger: "#box2",
                 scrub: true,
                 start: "-=300",
-                end: "bottom center",
+                end: "bottom top",
             }
         });
+
 
         // tl.to('#s2d1', {autoAlpha: 1});
         // tl.to('#s2d1', {autoAlpha: 0, delay: 1});
@@ -83,7 +74,11 @@ const TargetMultipleItems = () => {
         // tl.to('#s2d4', {autoAlpha: 1});
         // tl.to('#s2d4', {autoAlpha: 0, delay: 1});
         tl.to('#s2d5', {autoAlpha: 1});
-        tl.to('#s2d5', {autoAlpha: 0, delay: 1});
+        tl.to('#s2d5', {autoAlpha: 0})
+            .to("#box2", {
+                backgroundColor: "#f6f6f6",
+
+            })
         // tl.to("#box2", {
         //     backgroundColor: "#f6f6f6"
         // })
@@ -137,7 +132,7 @@ const TargetMultipleItems = () => {
                 {/*<div id="s2d2" className="s2">LINE 2</div>*/}
                 {/*<div id="s2d3" className="s2">LINE 3</div>*/}
                 {/*<div id="s2d4" className="s2">LINE 4</div>*/}
-                <div id="s2d5" className="s2">This is where the background should fade out on scroll</div>
+                <div id="s2d5" className="s2">We believe in the power of two: of thinking left and making right. Of strategy and design. People and planet. Head and heart. Us and you.</div>
             </div>
 
             <div id="box3">
@@ -216,32 +211,6 @@ const TargetMultipleItems = () => {
                     <span className="s3name">MARCO LOUD</span>
                     <span className="s3name">PETER GAINES</span>
                     <span className="s3name">TORREY ROBINSON</span>
-                    <span className="s3name">DARIUS ROBINSON</span>
-                    <span className="s3name">KEVIN HICKS</span>
-                    <span className="s3name">MARY TRUXILLO</span>
-                    <span className="s3name">DEMARCUS SEMER</span>
-                    <span className="s3name">GEORGE FLOYD</span>
-                    <span className="s3name">WILLIE TILLMAN</span>
-                    <span className="s3name">TERRILL THOMAS</span>
-                    <span className="s3name">SYLVILLE SMITH</span>
-                    <span className="s3name">ALTON STERLING</span>
-                    <span className="s3name">PHILANDO CASTILE</span>
-                    <span className="s3name">TERENCE CRUTCHER</span>
-                    <span className="s3name">PAUL O’NEAL</span>
-                    <span className="s3name">ALTERIA WOODS</span>
-                    <span className="s3name">JORDAN EDWARDS</span>
-                    <span className="s3name">AARON BAILEY</span>
-                    <span className="s3name">RONELL FOSTER</span>
-                    <span className="s3name">STEPHON CLARK</span>
-                    <span className="s3name">ANTWON ROSE II</span>
-                    <span className="s3name">BOTHAM JEAN</span>
-                    <span className="s3name">PAMELA TURNER</span>
-                    <span className="s3name">DOMINIQUE CLAYTON</span>
-                    <span className="s3name">ATATIANA JEFFERSON</span>
-                    <span className="s3name">CHRISTOPHER WHITFIELD</span>
-                    <span className="s3name">CHRISTOPHER MCCORVEY</span>
-                    <span className="s3name">ERIC REASON</span>
-                    <span className="s3name">MICHAEL LORENZO DEAN</span>
                 </div>
             </div>
             <div id="box4">

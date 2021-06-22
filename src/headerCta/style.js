@@ -45,3 +45,23 @@ export const TextBottom = styled.h1 `
     font-size: 30px;
   }
 `;
+
+export const TextLogo = styled.h1 `
+  font-family: "Azonix", sans-serif;
+  font-size: 150px;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  position: absolute;
+  top: 5%;
+  right: 0;
+  color: #afafaf;
+  opacity: .1;
+  z-index: -1;
+  
+  @media screen and (max-width: 800px) {
+    font-size: 120px;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 100px;
+  }
+`;

@@ -5,14 +5,14 @@ import './style.css';
 import {
     Container,
     Panel,
-    Red,
+    // Red,
     PanelItem,
     PanelItemText,
-    FirstPanelAbsolute,
-    SecondPanelAbsolute,
-    ThirdPanelAbsolute,
-    FourthPanelAbsolute,
-    FifthPanelAbsolute
+    // FirstPanelAbsolute,
+    // SecondPanelAbsolute,
+    // ThirdPanelAbsolute,
+    // FourthPanelAbsolute,
+    // FifthPanelAbsolute
 } from "./style";
 
 const HorizontalScroll = () => {
@@ -97,24 +97,52 @@ const HorizontalScroll = () => {
                         </PanelItemText>
                     </PanelItem>
                 </Panel>
-                <Red className="panel2 panel">
-                        <FirstPanelAbsolute id="first-panel">
-                            Programming
-                        </FirstPanelAbsolute>
-                        <SecondPanelAbsolute id="second-panel">
-                            Branding
-                        </SecondPanelAbsolute>
-                        <ThirdPanelAbsolute id="third-panel">
-                            Design
-                        </ThirdPanelAbsolute>
+                <Panel className="description panel blue">
+                    <PanelItem id="panel-item">
+                        <PanelItemText>
+                            Our Services
+                        </PanelItemText>
+                    </PanelItem>
+                </Panel>
+                <Panel className="description panel blue">
+                    <PanelItem id="panel-item">
+                        <PanelItemText>
+                            Our Services
+                        </PanelItemText>
+                    </PanelItem>
+                </Panel>
+                <Panel className="description panel blue">
+                    <PanelItem id="panel-item">
+                        <PanelItemText>
+                            Our Services
+                        </PanelItemText>
+                    </PanelItem>
+                </Panel>
+                <Panel className="description panel blue">
+                    <PanelItem id="panel-item">
+                        <PanelItemText>
+                            Our Services
+                        </PanelItemText>
+                    </PanelItem>
+                </Panel>
+                {/*<Red className="panel2 panel">*/}
+                {/*        <FirstPanelAbsolute id="first-panel">*/}
+                {/*            Programming*/}
+                {/*        </FirstPanelAbsolute>*/}
+                {/*        <SecondPanelAbsolute id="second-panel">*/}
+                {/*            Branding*/}
+                {/*        </SecondPanelAbsolute>*/}
+                {/*        <ThirdPanelAbsolute id="third-panel">*/}
+                {/*            Design*/}
+                {/*        </ThirdPanelAbsolute>*/}
 
-                    <FourthPanelAbsolute id="fourth-panel">
-                        Smm
-                    </FourthPanelAbsolute>
-                    <FifthPanelAbsolute id="fifth-panel">
-                        Logo
-                    </FifthPanelAbsolute>
-                </Red>
+                {/*    <FourthPanelAbsolute id="fourth-panel">*/}
+                {/*        Smm*/}
+                {/*    </FourthPanelAbsolute>*/}
+                {/*    <FifthPanelAbsolute id="fifth-panel">*/}
+                {/*        Logo*/}
+                {/*    </FifthPanelAbsolute>*/}
+                {/*</Red>*/}
 
             </Container>
         </>

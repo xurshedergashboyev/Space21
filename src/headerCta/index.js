@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
-import {Wrapper, Text, TextBottom} from "./style";
+import {Wrapper, Text, TextBottom, TextLogo} from "./style";
 
 
 const HeaderCta = () => {
@@ -61,6 +61,9 @@ const HeaderCta = () => {
                 <TextBottom id="header-text-absolute">
                     We call it leftright thinking
                 </TextBottom>
+                <TextLogo>
+                    Space21
+                </TextLogo>
             </Wrapper>
         </>
     )

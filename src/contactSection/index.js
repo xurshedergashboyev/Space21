@@ -8,6 +8,9 @@ const ContactSection = () => {
                 <Container>
                     <ContainerTextWrapper>
                         <ContainerDesc>
+                            Damn, you really liked us.
+                        </ContainerDesc>
+                        <ContainerDesc>
                             Wanna know something more?
                         </ContainerDesc>
                     </ContainerTextWrapper>

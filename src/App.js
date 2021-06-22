@@ -21,7 +21,7 @@ import AboutUsPage from "./pages/AboutUsPage";
 
 import LocomotiveText from "./locomotiveText";
 
-import OurServicesPage from "./pages/OurServicesPage";
+import OurServicesPage from "./pages/PortfolioPage";
 
 const App = () => {
 //     useEffect(() => {

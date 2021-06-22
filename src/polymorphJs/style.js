@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div `
   [data-page-container]{
-    background-color: #fff;
+    background-color: #f6f6f6;
     position: relative;
     width: 100vw;
     margin: 0 auto;
