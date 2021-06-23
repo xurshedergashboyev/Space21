@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.div `
   width: 100vw;
   height: fit-content;
-  background-color: #222;
+  background-color: #f6f6f6;
 `;
 
 export const Container = styled.div `
@@ -16,46 +16,70 @@ export const Container = styled.div `
 `;
 
 export const ProjectsContainer = styled.div `
-  display: flex;
+    display: flex;
+    height: fit-content;
+    margin-bottom: 150px;
+    width: 100%;
+    @media screen and (max-width: 1400px) {
+      margin-bottom: 50px;
+    }
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 0;
+    }
+    
+  @media screen and (max-width: 980px) {
+    display: flex;
+    flex-direction: column;
+    
+  }
 `;
 
 export const SingleProjectContainer1 = styled.div `
   display: flex;
   flex-direction: column;
-  width: 47.25%;
-  height: 600px;
+  height: 400px;
   margin-right: 5.5%;
+  @media screen and (min-width: 981px) {
+    width: 47.25%;
+  };
+  @media screen and (max-width: 980px) {
+    width: 100%;
+    height: 100%;
 `;
 
 export const SingleProjectContainer2 = styled.div `
   display: flex;
   flex-direction: column;
-  width: 47.25%;
-  height: 600px;
+  height: 400px;
   margin-right: 0;
+  @media screen and (min-width: 981px) {
+    width: 47.25%;
+  };
+  @media screen and (max-width: 980px) {
+    width: 100%;
+    height: 100%;
+  };
 `;
 
 export const SingleProjectImage = styled.div `
   width: 100%;
-  height: 80%;
+  height: auto;
 `;
 
 export const SingleProjectImg = styled.img `
   width: 100%;
-  height: auto;
 `;
 
 export const SingleProjectText = styled.div `
   width: 100%;
+  height: 50px;
   display: flex;
 `;
 
 export const SingleProjectHeading = styled.p `
-  font-size: 30px;
-  color: #f6f6f6;
+  font-size: 50px;
   margin-right: 5px;
   text-decoration: underline;
-  z-index: 9999;
   //&:after {
   //position: absolute;
   // content: "\2197";
@@ -65,3 +89,30 @@ export const SingleProjectHeading = styled.p `
   // font-weight: 700;
   //}
 `;
+
+export const CustomCursorBall = styled.div `
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+`;
+
+export const CustomCursorBig = styled(CustomCursorBall) `
+    content: "";
+    width: 300px;
+    height: 300px;
+    background-image: url(${props => props.hoverImage});
+`;
+
+export const CustomCursorSmall = styled(CustomCursorBall) `
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #78fff1;
+    border-radius: 50%;
+`;
+
+

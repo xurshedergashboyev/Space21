@@ -13,7 +13,6 @@ const ChangeBackground = () => {
                 end: "+=250", // end after scrolling 500px beyond the start
                 scrub: .5,
                 pin: true,
-                markers: true
             },
             color: '#afafaf'
         })

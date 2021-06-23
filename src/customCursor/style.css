@@ -1,58 +1,57 @@
-.cursor-preview {
-    width: 100vw;
-    height: 100vh;
-    background-color: red;
-}
+/*.cursor-preview {*/
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+/*    background-color: red;*/
+/*}*/
 
-.cursor-preview__title {
-    font-size: 20px;
-    line-height: 24px;
-    color: #8a9eff;
-    margin-bottom: 5px;
-}
+/*.cursor-preview__title {*/
+/*    font-size: 20px;*/
+/*    line-height: 24px;*/
+/*    color: #8a9eff;*/
+/*    margin-bottom: 5px;*/
+/*}*/
 
-    .cursor-preview__link {
-    color: #fff;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-}
+/*    .cursor-preview__link {*/
+/*    color: #fff;*/
+/*    font-weight: 600;*/
+/*    font-size: 24px;*/
+/*    line-height: 29px;*/
+/*}*/
 
-    .cursor-preview__button {
-    background: #78fff1;
-    border-radius: 5px;
-    padding: 16px 50px;
-    color: #fff;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    outline: none;
-    border:none;
-}
+/*    .cursor-preview__button {*/
+/*    background: #78fff1;*/
+/*    border-radius: 5px;*/
+/*    padding: 16px 50px;*/
+/*    color: #fff;*/
+/*    font-weight: 600;*/
+/*    font-size: 24px;*/
+/*    line-height: 29px;*/
+/*    outline: none;*/
+/*    border:none;*/
+/*}*/
 
 
-    .custom-cursor__ball {
-    position: fixed;
-    top: 0;
-    left: 0;
-    mix-blend-mode: difference;
-    z-index: 99999;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s ease;
-}
+/*    .custom-cursor__ball {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    z-index: 99999;*/
+/*    opacity: 0;*/
+/*    pointer-events: none;*/
+/*    !*transition: opacity 0.2s ease;*!*/
+/*}*/
 
-    .custom-cursor__ball--big {
-    content: "";
-    width: 300px;
-    height: 300px;
-        background-image: url("https://images.prismic.io/howandhow/04214560-34b3-4ec6-85ca-617c9de292a7_09_product_showcase_1920x1080_2.jpg?auto=compress,format");
-    }
+/*    .custom-cursor__ball--big {*/
+/*    content: "";*/
+/*    width: 300px;*/
+/*    height: 300px;*/
+/*        background-image: url("https://www.somoswaka.com/wp-content/uploads/2020/12/WAKA-slider_Frutality.jpg");*/
+/*    }*/
 
-    .custom-cursor__ball--small {
-    content: "";
-    width: 6px;
-    height: 6px;
-    background: #78fff1;
-    border-radius: 50%;
-}
+/*    .custom-cursor__ball--small {*/
+/*    content: "";*/
+/*    width: 6px;*/
+/*    height: 6px;*/
+/*    background: #78fff1;*/
+/*    border-radius: 50%;*/
+/*}*/

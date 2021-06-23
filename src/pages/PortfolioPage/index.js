@@ -3,11 +3,12 @@ import PolymorphJs from "../../polymorphJs";
 // import HorizontalScroll from "../../horizontalScroll";
 import TextReveal from "../../textReveal";
 // import PinnedSideImages from "../../pinnedSideImages";
-import ChangeBackground from "../../changeBackground";
-import HoverText from "../../hoverText";
+// import ChangeBackground from "../../changeBackground";
+// import HoverText from "../../hoverText";
 import PortfolioCta from "../../portfolioCta";
-import CustomCursor from "../../customCursor";
+// import CustomCursor from "../../customCursor";
 import PortfolioProjects from "../../portfolioProjects";
+import ContactSection from "../../contactSection";
 
 const PortfolioPage = () => {
     return (
@@ -17,10 +18,10 @@ const PortfolioPage = () => {
             {/*<HorizontalScroll/>*/}
             <TextReveal/>
             {/*<PinnedSideImages/>*/}
-            <ChangeBackground/>
-            <HoverText/>
-            <CustomCursor />
+            {/*<ChangeBackground/>*/}
+            {/*<CustomCursor />*/}
             <PortfolioProjects />
+            <ContactSection />
         </>
     )
 }

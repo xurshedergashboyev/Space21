@@ -8,8 +8,6 @@
     width: 100%;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background: #222222;
 }
 
@@ -22,6 +20,38 @@
     transform: scale(0);
     transition: .8s;
     transition-delay: .8s;
+}
+
+.text-section-reveal {
+    font-size: 300px;
+    color: #afafaf;
+    margin-top: 50px;
+    margin-left: 0;
+    opacity: .5;
+}
+
+@media screen and (max-width: 1500px) {
+    .text-section-reveal {
+        font-size: 200px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .text-section-reveal {
+        font-size: 150px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .text-section-reveal {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .text-section-reveal {
+        font-size: 75px;
+    }
 }
 
 .text-section .reveal.active {

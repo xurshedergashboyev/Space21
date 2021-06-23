@@ -6,29 +6,58 @@ import {ScrollTrigger} from "gsap/ScrollTrigger";
 const PortfolioCta = () => {
     gsap.registerPlugin(ScrollTrigger)
     useEffect(() => {
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: '#portfolio-wrapper',
-                scrub: true,
-                start: "top top",
-                pin: true
-            },
-        });
-            tl.fromTo('#portfolio-desc', {
-                autoAlpha: 0
-            }, {
-                autoAlpha: 1
-            })
-                .to("#portfolio-text", {
-                    x: -350
+        ScrollTrigger.matchMedia({
+            '(min-width: 700px)' : function() {
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '#portfolio-wrapper',
+                        scrub: true,
+                        start: "top top",
+                        pin: true
+                    },
+                });
+                tl.fromTo('#portfolio-desc', {
+                    autoAlpha: 0
+                }, {
+                    autoAlpha: 1
                 })
-                .to("#portfolio-desc", {
-                    x: 250
+                    .to("#portfolio-text", {
+                        x: -450
+                    })
+                    .to("#portfolio-desc", {
+                        y: -250
+                    })
+                    .to('#portfolio-wrapper', {
+                        backgroundColor: "#f6f6f6"
+                    })
+            }
+        })
+        ScrollTrigger.matchMedia({
+            '(max-width: 699px)' : function() {
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '#portfolio-wrapper',
+                        scrub: true,
+                        start: "top top",
+                        pin: true
+                    },
+                });
+                tl.fromTo('#portfolio-desc', {
+                    autoAlpha: 0
+                }, {
+                    autoAlpha: 1
                 })
-            .to('#portfolio-wrapper', {
-                backgroundColor: "#f6f6f6"
-            })
-
+                    .to("#portfolio-text", {
+                        x: -350
+                    })
+                    .to("#portfolio-desc", {
+                        y: 250
+                    })
+                    .to('#portfolio-wrapper', {
+                        backgroundColor: "#f6f6f6"
+                    })
+            }
+        })
     })
     return (
         <>
