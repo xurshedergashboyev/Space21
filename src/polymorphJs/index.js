@@ -350,7 +350,7 @@ const PolymorphJs = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" viewBox="0 0 398 426">
                             <path id="letters"
                                   d="M57 426l47.4-134.4h189L340.8 426h57L248.4 0h-99L0 426h57zm218.4-186h-153l66-188.4h21l66 188.4z"
-                                  fill="#000" fillRule="nonzero"/>
+                                  fill="#222222" fillRule="nonzero"/>
                         </svg>
                     </IntroLetters>
                     <BorderBottom className="border-bottom"/>

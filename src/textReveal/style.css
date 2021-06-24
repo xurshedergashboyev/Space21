@@ -9,6 +9,7 @@
     min-height: 100vh;
     display: flex;
     background: #222222;
+    position: relative;
 }
 
 .text-section .reveal {
@@ -24,10 +25,14 @@
 
 .text-section-reveal {
     font-size: 300px;
-    color: #afafaf;
+    color: #ffffff;
     margin-top: 50px;
     margin-left: 0;
     opacity: .5;
+    position: absolute;
+    top: 0;
+    right: -20%;
+    overflow-x: hidden;
 }
 
 @media screen and (max-width: 1500px) {

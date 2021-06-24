@@ -4,8 +4,8 @@ import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 
 import image3 from '../images/pexels-eva-elijas-6956316.jpg';
-import image2 from '../images/pexels-nataliya-vaitkevich-6120166.jpg';
-import image1 from '../images/walling-SQIpFNb0Nk4-unsplash.jpg';
+import image2 from '../images/pexels-nataliya-vaitkevich-6120166-min.jpg';
+import image1 from '../images/walling-SQIpFNb0Nk4-unsplash-min.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 

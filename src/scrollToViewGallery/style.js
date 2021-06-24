@@ -1,15 +1,16 @@
-import styled from 'styled-components'
-import image1 from '../images/walling-SQIpFNb0Nk4-unsplash.jpg'
-import image2 from '../images/alexandru-acea--WBYxmW4yuw-unsplash.jpg'
-import image3 from '../images/8.jpg'
-import image4 from '../images/1.jpg'
-import image5 from '../images/2.jpg'
-import image6 from '../images/04.jpg'
-import image7 from '../images/9.jpg'
-import image8 from '../images/pexels-eva-elijas-6956316.jpg'
-import image9 from '../images/pexels-nataliya-vaitkevich-6120166.jpg'
+import styled from 'styled-components';
 
-export const GridBlock1 = styled.div `
+import image1 from '../images/walling-SQIpFNb0Nk4-unsplash-min.jpg'
+import image2 from '../images/alexandru-acea--WBYxmW4yuw-unsplash-min.jpg'
+import image3 from '../images/8-min.jpg'
+import image4 from '../images/1-min.jpg'
+import image5 from '../images/2-min.jpg'
+import image6 from '../images/04-min.jpg'
+import image7 from '../images/9-min.jpg'
+import image8 from '../images/pexels-nataliya-vaitkevich-6120166-min.jpg'
+import image9 from '../images/pexels-nataliya-vaitkevich-6120166-min.jpg'
+
+export const GridBlock1 = styled.div`
   opacity: 0;
       background-size: cover;
     background-color: darkgray;
@@ -17,7 +18,7 @@ export const GridBlock1 = styled.div `
     position: absolute;
     background-image: url(${image1});
 `;
-export const GridBlock2 = styled.div `
+export const GridBlock2 = styled.div`
   opacity: 0;
       background-size: cover;
     background-color: darkgray;
@@ -26,7 +27,7 @@ export const GridBlock2 = styled.div `
         background-image: url(${image2});
 
 `;
-export const GridBlock3 = styled.div `
+export const GridBlock3 = styled.div`
   opacity: 0;
       background-size: cover;
     background-color: darkgray;
@@ -35,7 +36,7 @@ export const GridBlock3 = styled.div `
         background-image: url(${image3});
 
 `;
-export const GridBlock4 = styled.div `
+export const GridBlock4 = styled.div`
   opacity: 0;
       background-size: cover;
     background-color: darkgray;
@@ -44,7 +45,7 @@ export const GridBlock4 = styled.div `
         background-image: url(${image4});
 
 `;
-export const GridBlock5 = styled.div `
+export const GridBlock5 = styled.div`
   opacity: 0;
       background-size: cover;
     background-color: darkgray;
@@ -53,7 +54,7 @@ export const GridBlock5 = styled.div `
         background-image: url(${image5});
 
 `;
-export const GridBlock6 = styled.div `
+export const GridBlock6 = styled.div`
   opacity: 0;
       background-size: cover;
     background-color: darkgray;
@@ -62,7 +63,7 @@ export const GridBlock6 = styled.div `
         background-image: url(${image6});
 
 `;
-export const GridBlock7 = styled.div `
+export const GridBlock7 = styled.div`
   opacity: 0;
       background-size: cover;
     background-color: darkgray;
@@ -71,7 +72,7 @@ export const GridBlock7 = styled.div `
         background-image: url(${image7});
 
 `;
-export const GridBlock8 = styled.div `
+export const GridBlock8 = styled.div`
   opacity: 0;
       background-size: cover;
     background-color: darkgray;
@@ -80,7 +81,7 @@ export const GridBlock8 = styled.div `
         background-image: url(${image8});
 
 `;
-export const GridBlock9 = styled.div `
+export const GridBlock9 = styled.div`
   opacity: 0;
       background-size: cover;
     background-color: darkgray;
@@ -90,14 +91,14 @@ export const GridBlock9 = styled.div `
 
 `;
 
-export const GridContainer = styled.div `
+export const GridContainer = styled.div`
   width: 100vw;
   height: 400vh;
   position: relative;
   overflow-x: hidden;
 `;
 
-export const Grid = styled.div `
+export const Grid = styled.div`
   top: 0;
   left: 0;
   z-index: 1;
@@ -113,7 +114,7 @@ export const Grid = styled.div `
     }
 `;
 
-export const GridLayer = styled.div `
+export const GridLayer = styled.div`
       top: 0;
     left: 0;
     width: 100%;

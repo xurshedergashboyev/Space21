@@ -92,6 +92,13 @@
     margin: 0;
 }
 
+@media screen and (max-width: 700px) {
+    .parallax-text {
+        font-size: 15vw;
+        line-height: 15vw;
+    }
+}
+
 .parallax-text-second {
     color: transparent;
     -webkit-text-stroke: 0.2vw #f6f6f6;

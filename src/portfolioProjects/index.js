@@ -22,7 +22,7 @@ const data = [
         img2: 'https://www.somoswaka.com/wp-content/uploads/2018/10/WAKA-slider_Veolia.jpg',
         text: 'Space Academy',
         hoverImg1: 'https://www.somoswaka.com/wp-content/uploads/2020/12/WAKA-slider_Frutality.jpg',
-        hoverImg2: 'https://www.somoswaka.com/wp-content/uploads/2018/10/WAKA-slider_Veolia.jpg'
+        hoverImg2: 'https://www.somoswaka.com/wp-content/uploads/2018/10/WAKA-slider_Veolia.jpg',
     },
     {
         id: 2,
@@ -54,13 +54,16 @@ const PortfolioProjects = () => {
 
 
     const [image, setImage] = useState('');
-
+    const [bgColor, setBgColor] = useState('#222');
+    const [color, setColor] = useState('#f6f6f6');
 
     useEffect(() => {
         const cursorBig = document.getElementById('cursor-big'),
             cursorSmall = document.getElementById('cursor-small'),
             withClassHover = document.getElementsByClassName("cursor-hover"),
-            withHover = [...withClassHover];
+            withHover = [...withClassHover],
+            backgroundColor = document.querySelector('#portfolio-projects'),
+            textColor = document.querySelectorAll('#portfolio-projects-text')
 
         document.addEventListener("mousemove", onMouseMove);
         document.addEventListener("mousedown", onMouseHover);
@@ -87,17 +90,29 @@ const PortfolioProjects = () => {
             gsap.to(cursorBig, {
                 opacity: 1,
             });
+            gsap.to(backgroundColor, {
+                background: bgColor
+            })
+            gsap.to(textColor, {
+                color: color
+            })
         }
 
         function onMouseHoverOut() {
             gsap.to(cursorBig, {
                 opacity: 0
             });
+            gsap.to(backgroundColor, {
+                background: '#f6f6f6'
+            })
+            gsap.to(textColor, {
+                color: '#222'
+            })
         }
     })
     return (
         <>
-            <Wrapper>
+            <Wrapper bgColor={() => setBgColor(bgColor)} id="portfolio-projects">
                 <Container>
                     {data.map((index,) =>
                         <ProjectsContainer key={index.id}>
@@ -114,9 +129,8 @@ const PortfolioProjects = () => {
                                     </div>
                                 </SingleProjectImage>
                                 <SingleProjectText>
-                                    <SingleProjectHeading>
+                                    <SingleProjectHeading id="portfolio-projects-text" color={() => setColor(color)}>
                                         {index.text}
-                                        {index.hoverImg}
                                     </SingleProjectHeading>
                                 </SingleProjectText>
                             </SingleProjectContainer1>
@@ -127,8 +141,8 @@ const PortfolioProjects = () => {
                                         src={index.img2} className="cursor-hover"/>
                                 </SingleProjectImage>
                                 <SingleProjectText>
-                                    <SingleProjectHeading>
-                                        Space Academy
+                                    <SingleProjectHeading id="portfolio-projects-text" color={() => setColor(color)}>
+                                        {index.text}
                                     </SingleProjectHeading>
                                 </SingleProjectText>
                             </SingleProjectContainer2>

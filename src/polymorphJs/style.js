@@ -43,7 +43,7 @@ export const IntroLetters = styled.div `
 export const BorderTop = styled.div `
     width: 100%;
     height: 60px;
-    background-color: #000;
+    background-color: #222222;
     transform: scaleX(0);
     transform-origin: 0 50%;
     margin-bottom: auto;
@@ -52,7 +52,7 @@ export const BorderTop = styled.div `
 export const BorderBottom = styled.div `
     width: 100%;
     height: 60px;
-    background-color: #000;
+    background-color: #222222;
     transform: scaleX(0);
     transform-origin: 100% 50%;
     margin-top: auto;

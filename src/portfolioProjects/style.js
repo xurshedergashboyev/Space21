@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const Wrapper = styled.div `
   width: 100vw;
   height: fit-content;
-  background-color: #f6f6f6;
+  background: url(${props => props.bgColor});
+  transition: background-color .3s ease;
 `;
 
 export const Container = styled.div `
@@ -76,10 +77,11 @@ export const SingleProjectText = styled.div `
   display: flex;
 `;
 
-export const SingleProjectHeading = styled.p `
-  font-size: 50px;
+export const SingleProjectHeading = styled.h1 `
+  font-size: 40px;
   margin-right: 5px;
   text-decoration: underline;
+  color: ${props => props.color}
   //&:after {
   //position: absolute;
   // content: "\2197";
@@ -97,7 +99,7 @@ export const CustomCursorBall = styled.div `
     z-index: 99999;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease ;
 `;
 
 export const CustomCursorBig = styled(CustomCursorBall) `

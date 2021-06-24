@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react'
+import React, {useEffect} from 'react'
 import './style.css';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
@@ -9,7 +9,6 @@ const Gallery = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     useEffect(() => {
-        "use strict";
 
         gsap.registerPlugin(ScrollTrigger);
 
