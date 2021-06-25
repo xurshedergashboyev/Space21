@@ -48,6 +48,12 @@
 .text-container__front {
     z-index: 3;
 }
+@media screen and (max-width: 700px) {
+    .text-container__front {
+        top: 45%;
+    }
+}
+
 
 .text-container__back {
     position: absolute;
@@ -62,6 +68,12 @@
     border-bottom: 1px solid #f6f6f6;
 }
 
+@media screen and (max-width: 700px) {
+    .text-container__back {
+        top: 70%;
+    }
+}
+
 .text-container__middle {
     position: absolute;
     z-index: 1;
@@ -74,6 +86,8 @@
     border-top: 1px solid #f6f6f6;
     border-bottom: 1px solid #f6f6f6;
 }
+
+
 
 .text-container__front > .parallax-text{
     border-top: 1px solid #f6f6f6;

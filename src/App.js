@@ -21,7 +21,7 @@ import AboutUsPage from "./pages/AboutUsPage";
 
 import LocomotiveText from "./locomotiveText";
 
-import OurServicesPage from "./pages/PortfolioPage";
+import PortfolioPage from "./pages/PortfolioPage";
 
 const App = () => {
 //     useEffect(() => {
@@ -48,7 +48,7 @@ const App = () => {
                     <LandingPage />
                 </Route>
                 <Route exact path="/portfolio">
-                    <OurServicesPage />
+                    <PortfolioPage />
                 </Route>
                 <Route exact path="/about-us">
                     <AboutUsPage />

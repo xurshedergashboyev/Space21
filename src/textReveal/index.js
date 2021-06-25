@@ -32,7 +32,7 @@ const TextReveal = () => {
                 scrollTrigger: {
                     trigger: element,
                     scrub: true,
-                    start: start + "px bottom" * 4,
+                    start: start + "px bottom" * 8,
                     end: "bottom top"
                 },
                 x: '-84vw',

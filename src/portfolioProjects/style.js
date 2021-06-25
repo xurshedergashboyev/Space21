@@ -75,13 +75,18 @@ export const SingleProjectText = styled.div `
   width: 100%;
   height: 50px;
   display: flex;
+  @media screen and (max-width: 700px) {
+    #portfolio-projects-text {
+      font-size: 25px; 
+    }
+  }
 `;
 
 export const SingleProjectHeading = styled.h1 `
   font-size: 40px;
   margin-right: 5px;
   text-decoration: underline;
-  color: ${props => props.color}
+  color: ${props => props.color};
   //&:after {
   //position: absolute;
   // content: "\2197";
@@ -90,6 +95,9 @@ export const SingleProjectHeading = styled.h1 `
   // font-family: "Couture Bold", sans-serif;
   // font-weight: 700;
   //}
+  @media screen and (max-width: 700px) {
+    font-size: 25px;
+  }
 `;
 
 export const CustomCursorBall = styled.div `

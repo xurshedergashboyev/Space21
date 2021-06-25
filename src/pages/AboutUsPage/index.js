@@ -1,15 +1,17 @@
 import React from 'react'
 // import ScrollToViewGallery from "../../scrollToViewGallery";
-import Example from "../../example";
-import ParallaxOutlineText from "../../parallaxOutlineText";
+// import Example from "../../example";
+// import ParallaxOutlineText from "../../parallaxOutlineText";
 import AboutUsHeader from "../../aboutUsHeader";
+import HorizontalScroll from "../../horizontalScroll";
+import ContactSection from "../../contactSection";
 
 const AboutUsPage = () => {
     return (
         <>
             <AboutUsHeader/>
-            <Example/>
-            <ParallaxOutlineText/>
+            <HorizontalScroll />
+            <ContactSection />
         </>
     )
 }

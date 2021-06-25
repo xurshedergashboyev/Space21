@@ -30,7 +30,7 @@ export const Mask = styled(Link) `
   letter-spacing: -0.03em;
   background: radial-gradient(circle 100px at var(--x,0) var(--y,0), #747474 99%, #f6f6f6 100%) fixed;
   -webkit-background-clip: text;
-  color: transparent;
+  color: ${props => props.color ? '#f6f6f6' : '#ffbf2b'};
   -webkit-text-fill-color: transparent;
   transition: all 0.5s ease-in-out;
     cursor: url("https://www.somoswaka.com/wp-content/uploads/2017/10/WAKA-cursor-hover.png") 25 30, auto;

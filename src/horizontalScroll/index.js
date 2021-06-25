@@ -93,35 +93,35 @@ const HorizontalScroll = () => {
                 <Panel className="description panel blue">
                     <PanelItem id="panel-item">
                         <PanelItemText>
-                            Our Services
+                            About us
                         </PanelItemText>
                     </PanelItem>
                 </Panel>
                 <Panel className="description panel blue">
                     <PanelItem id="panel-item">
                         <PanelItemText>
-                            Our Services
+                            About us
                         </PanelItemText>
                     </PanelItem>
                 </Panel>
                 <Panel className="description panel blue">
                     <PanelItem id="panel-item">
                         <PanelItemText>
-                            Our Services
+                            About us
                         </PanelItemText>
                     </PanelItem>
                 </Panel>
                 <Panel className="description panel blue">
                     <PanelItem id="panel-item">
                         <PanelItemText>
-                            Our Services
+                            About us
                         </PanelItemText>
                     </PanelItem>
                 </Panel>
                 <Panel className="description panel blue">
                     <PanelItem id="panel-item">
                         <PanelItemText>
-                            Our Services
+                            About us
                         </PanelItemText>
                     </PanelItem>
                 </Panel>

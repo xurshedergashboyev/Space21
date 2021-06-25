@@ -13,7 +13,6 @@ export const Wrapper = styled.div `
 export const Text = styled.h1 `
   font-size: 100px;
   line-height: 1.5;
-  //font-family: "Azonix", sans-serif;
   @media screen and (max-width: 1400px) {
     font-size: 100px;
   }
@@ -43,6 +42,7 @@ export const TextBottom = styled.h1 `
   }
   @media screen and (max-width: 450px) {
     font-size: 30px;
+    bottom: 100px;
   }
 `;
 

@@ -152,6 +152,12 @@ a {
     text-align: justify;
 }
 
+@media screen and (max-width: 700px) {
+    #s3names {
+        font-size: 8vmin;
+    }
+}
+
 #box4 {
     display: block;
     overflow-x: hidden;
