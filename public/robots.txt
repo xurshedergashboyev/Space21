@@ -1,0 +1,4 @@
+# https://www.robotstxt.org/robotstxt.html
+Sitemap: https://space21.io/sitemapse.txt
+User-agent: googlebot
+Disallow: /about-us/

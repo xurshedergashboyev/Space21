@@ -1,0 +1,79 @@
+/*.content-wrapper {*/
+/*    width: 100vw;*/
+/*    margin-bottom: 50px;*/
+/*}*/
+
+/*.content-container {*/
+/*    margin-top: 100px;*/
+/*    display: flex;*/
+/*    margin-bottom: 50px;*/
+/*}*/
+
+/*@media screen and (max-width: 800px) {*/
+/*    .content-container {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+
+/*.content-container > * {*/
+/*    flex-basis: 100%;*/
+/*}*/
+
+/*.header-section {*/
+/*    margin-bottom: 50px;*/
+/*}*/
+
+/*.right-content {*/
+/*    padding-right: 15px;*/
+/*}*/
+
+/*.left-content {*/
+/*    height: 100vh;*/
+/*    position: relative;*/
+/*}*/
+
+/*.left-content > * {*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    top: 50%;*/
+/*    opacity: 0;*/
+/*    visibility: hidden;*/
+/*}*/
+
+/*@media screen and (max-width: 800px) {*/
+/*    !*.left-content {*!*/
+/*    !*    display: none;*!*/
+/*    !*}*!*/
+/*    .right-content {*/
+/*        padding-left: 15px;*/
+/*    }*/
+/*}*/
+
+/*#img1 {*/
+/*    width: 400px;*/
+/*    height: auto;*/
+/*    filter: grayscale(100%);*/
+/*}*/
+
+/*#img2 {*/
+/*    width: 400px;*/
+/*    height: auto;*/
+/*    filter: grayscale(100%);*/
+/*}*/
+
+/*#img3 {*/
+/*    width: 400px;*/
+/*    height: auto;*/
+/*    filter: grayscale(100%);*/
+/*}*/
+
+/*.contentMarker {*/
+/*    font-size: 50px;*/
+/*}*/
+
+/*@media screen and (max-width: 800px) {*/
+/*    .contentMarker {*/
+/*        font-size: 30px;*/
+/*        margin-bottom: 50px;*/
+/*    }*/
+/*}*/

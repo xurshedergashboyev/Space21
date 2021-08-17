@@ -1,0 +1,66 @@
+{
+  "name": "space21",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "animejs": "^3.2.1",
+    "axios": "^0.21.1",
+    "firebase": "^8.8.0",
+    "framer-motion": "^4.1.17",
+    "gsap": "^3.6.1",
+    "just-animate": "^2.6.2",
+    "locomotive-scroll": "^4.1.1",
+    "lodash": "^4.17.21",
+    "nanoid": "^3.1.23",
+    "polymorph-js": "^1.0.2",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-loadingg": "^1.7.2",
+    "react-marquee-slider": "^1.1.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-sizeme": "^3.0.1",
+    "react-ticker": "^1.2.2",
+    "redux": "^4.1.0",
+    "redux-devtools": "^3.7.0",
+    "redux-logger": "^3.0.6",
+    "redux-promise-middleware": "^6.1.2",
+    "redux-thunk": "^2.3.0",
+    "scroll-out": "^2.2.12",
+    "smooth-scrollbar": "^8.6.3",
+    "styled-components": "^5.3.0",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "first-input-delay": "^0.1.3"
+  }
+}

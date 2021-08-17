@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url('https://www.somoswaka.com/wp-content/uploads/2017/10/WAKA-cursor.png'), auto;
+}
+
+@font-face {
+    font-family: 'Azonix';
+    src: local('Azonix'), url("./assets/fonts/Azonix.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Adelia';
+    src: local('Adelia'), url("./assets/fonts/ADELIA.otf") format('opentype');
+}
+
+@font-face {
+    font-family: "Maison Neue Light";
+    src: url("//db.onlinewebfonts.com/t/8b59d4b47037b08d452d8cb659cc2d53.eot");
+}
+
+@font-face {
+    font-family: 'Star Born';
+    src: local('Star Borm'), url("./assets/fonts/Starborn.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Couture Bold';
+    src: local('Couture Bold'), url("./assets/fonts/couture-bld.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Designer';
+    src: local('Designer'), url("./assets/fonts/DESIGNER.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Monster Ag';
+    src: local('Monster Ag'), url("./assets/fonts/monster.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Milky Road';
+    src: local('Milky Road'), url("./assets/fonts/milkyroad.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Cocogoose Pro';
+    src: local('Cocogoose Pro'), url("./assets/fonts/cocogoose.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Ginora';
+    src: url("./assets/fonts/ginora_sans/Ginora.otf");
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url("./assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url("./assets/fonts/Poppins/Poppins-Bold.ttf");
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins-Regular', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f6f6f6;
+    color: #222222;
+    overflow-x: hidden;
+    /*height: -webkit-fill-available;*/
+}
+
+::selection {
+    background: transparent;
+    color: #fddb3a;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.overlay {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+
+.second {
+    background: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.intro-image {
+    width: 100%;
+    height: 100%;
+}
+
+progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    appearance: none;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: #afafaf;
+    z-index: 10000;
+}
+
+progress::-webkit-progress-bar {
+    background: transparent;
+}
+
+progress::-webkit-progress-value {
+    background: #000;
+}
+
+.app-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+:root {
+    /* theme color variables to use in HSL declarations */
+    --hue: 220;
+    --sat: 100;
+    --light: 50;
+
+    --threshold: 65;
+}
+
+.btn {
+    /*auxiliary variable for hue manipulation*/
+    --h: var(--hue);
+
+    /*sets the background for the base class*/
+    background: hsl(var(--h), calc(var(--sat) * 1%), calc(var(--light) * 1%));
+
+    /* 1) Any lightness value bellow the threshold will result in white, any above will result in black*/
+    --switch: calc((var(--light) - var(--threshold)) * -100%);
+    color: hsl(0, 0%, var(--switch));
+}

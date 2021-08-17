@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta name="description" content="Space21- Digital and Creative Company"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico"/>
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <script>
+        !function (n, e) {
+            let t, o, i, c = [], f = {passive: !0, capture: !0}, r = new Date, a = "pointerup", u = "pointercancel";
+
+            function p(n, c) {
+                t || (t = c, o = n, i = new Date, w(e), s())
+            }
+
+            function s() {
+                o >= 0 && o < i - r && (c.forEach(function (n) {
+                    n(o, t)
+                }), c = [])
+            }
+
+            function l(t) {
+                if (t.cancelable) {
+                    let o = (t.timeStamp > 1e12 ? new Date : performance.now()) - t.timeStamp;
+                    "pointerdown" === t.type ? function (t, o) {
+                        function i() {
+                            p(t, o), r()
+                        }
+
+                        function c() {
+                            r()
+                        }
+
+                        function r() {
+                            e(a, i, f), e(u, c, f)
+                        }
+
+                        n(a, i, f), n(u, c, f)
+                    }(o, t) : p(o, t)
+                }
+            }
+
+            function w(n) {
+                ["click", "mousedown", "keydown", "touchstart", "pointerdown"].forEach(function (e) {
+                    n(e, l, f)
+                })
+            }
+
+            w(n), self.perfMetrics = self.perfMetrics || {}, self.perfMetrics.onFirstInputDelay = function (n) {
+                c.push(n), s()
+            }
+        }(addEventListener, removeEventListener);
+
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://space21.io",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/space-21-72f2b.appspot.com/o/images%2Fmock-up%2Fspace21%2Fspace21%20logo.jpg?alt=media&token=6653722d-a5bc-4c3a-8fa7-69851b16bedc"
+        }
+    </script>
+    <title>Space21 - Digital and Creative Company</title>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
+
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+
+<!-- Add the standard Performance Monitoring library -->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-performance.js"></script>
+<script>
+    // TODO: Replace the following with your app's Firebase project configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyDBA6cNRrC1hkZp-JQFVMJnsvp2utGZBZ4",
+        authDomain: "space-21-72f2b.firebaseapp.com",
+        projectId: "space-21-72f2b",
+        storageBucket: "space-21-72f2b.appspot.com",
+        messagingSenderId: "756664504471",
+        appId: "1:756664504471:web:792ddce25c8c3b13a399d2",
+        measurementId: "G-3ZY1BVMCZN"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Initialize Performance Monitoring and get a reference to the service
+    const perf = firebase.performance();
+</script>
+</body>
+</html>
